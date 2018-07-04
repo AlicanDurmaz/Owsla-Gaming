@@ -238,37 +238,37 @@ new AdminKomutlari[][acVars] =
 	{10, "/makeanim",	"Oyuncuyu Anim yapar."},
 	{10, "/makedj",	"Oyuncuyu DJ yapar."},
 	{10, "/makevip",	"Oyuncuyu VIP yapar."},
-	{10, "/createdm",	"Dinamik DM oluþturur."},
-	{10, "/lsay",	"Olaylar textdrawýnda bildirim yapar."},
-	{10, "/config",	"Oyun ayarlarýný deðiþtirir."},
-	{10, "/spawnekle",	"Dinamik spawn oluþturur."},
-	{10, "/spawnsil",	"Oluþturulmuþ olan spawný siler."},
-	{10, "/alladmins",	"Bütün adminleri gösterir."},
-	{10, "/allanims",	"Bütün animleri gösterir."},
-	{10, "/alldjs",	"Bütün djleri gösterir."},
-	{10, "/setcash",	"Istediðiniz kiþinin parasýný ayarlar."},
-	{10, "/setscore",	"Istediðiniz kiþinin skorunu ayarlar."},
+	{10, "/createdm",	"Dinamik DM oluÅŸturur."},
+	{10, "/lsay",	"Olaylar textdrawÄ±nda bildirim yapar."},
+	{10, "/config",	"Oyun ayarlarÄ±nÄ± deÄŸiÅŸtirir."},
+	{10, "/spawnekle",	"Dinamik spawn oluÅŸturur."},
+	{10, "/spawnsil",	"OluÅŸturulmuÅŸ olan spawnÄ± siler."},
+	{10, "/alladmins",	"BÃ¼tÃ¼n adminleri gÃ¶sterir."},
+	{10, "/allanims",	"BÃ¼tÃ¼n animleri gÃ¶sterir."},
+	{10, "/alldjs",	"BÃ¼tÃ¼n djleri gÃ¶sterir."},
+	{10, "/setcash",	"IstediÄŸiniz kiÅŸinin parasÄ±nÄ± ayarlar."},
+	{10, "/setscore",	"IstediÄŸiniz kiÅŸinin skorunu ayarlar."},
 	{10, "/kickall",	"Sunucudan herkesi atar."},
-	{10, "/killall",	"Herkesi öldürür."},
+	{10, "/killall",	"Herkesi Ã¶ldÃ¼rÃ¼r."},
 	{10, "/giveallmoney",	"Herkese para verir."},
 	{10, "/giveallscore",	"Herkese skor verir."},
-	{10, "/spawnlar",	"Oluþturulmuþ olan spawnlarý gösterir."},
-	{10, "/addupdate",	"Güncelleme notu ekler."},
-	{10, "/updatedel",	"Güncelleme notunu siler."},
-	{9, "/getip",	"Oyuncunun ipsini gösterir."},
-	{9, "/bugraporlar",	"Raporlanmýþ buglarý gösterir."},
-    {9, "/bugraporsil",	"Raporlanmýþ olan bugý siler."},
+	{10, "/spawnlar",	"OluÅŸturulmuÅŸ olan spawnlarÄ± gÃ¶sterir."},
+	{10, "/addupdate",	"GÃ¼ncelleme notu ekler."},
+	{10, "/updatedel",	"GÃ¼ncelleme notunu siler."},
+	{9, "/getip",	"Oyuncunun ipsini gÃ¶sterir."},
+	{9, "/bugraporlar",	"RaporlanmÄ±ÅŸ buglarÄ± gÃ¶sterir."},
+    {9, "/bugraporsil",	"RaporlanmÄ±ÅŸ olan bugÄ± siler."},
     {8, "/setcolor",	"Oyuncunun rengini ayarlar."},
-    {8, "/unban",	"Ban listesini gösterir."},
-    {7, "/rac",	"Kullanýlmayan araçlarý respawn eder."},
+    {8, "/unban",	"Ban listesini gÃ¶sterir."},
+    {7, "/rac",	"KullanÄ±lmayan araÃ§larÄ± respawn eder."},
     {7, "/offban",	"Offline ban atar."},
     {7, "/rban",	"Range ban atar."},
-    {6, "/god",	"God modunu açar."},
+    {6, "/god",	"God modunu aÃ§ar."},
     {6, "/nban",	"Name ban atar."},
-    {5, "/ban",	"Süreli ban atar."},
-    {5, "/akill",	"Istediðiniz oyuncuyu öldürür."},
+    {5, "/ban",	"SÃ¼reli ban atar."},
+    {5, "/akill",	"IstediÄŸiniz oyuncuyu Ã¶ldÃ¼rÃ¼r."},
     {2, "/kick",	"Oyuncuyu sunucudan atar."},
-    {1, "/aka",	"Istediðiniz oyuncunun isim geçmiþini gösterir."}
+    {1, "/aka",	"IstediÄŸiniz oyuncunun isim geÃ§miÅŸini gÃ¶sterir."}
 };
 
 enum mdVars
@@ -280,7 +280,7 @@ enum mdVars
 new MedalInfo[][mdVars] =
 {
 	{"King of OWSLA", "Butun basarimlari tamamla!", {20000000, 100, 200}}, //0
-	{"Ilk Mesaj", "Ilk kez yazý yaz", {1000, 2, 5}}, //1
+	{"Ilk Mesaj", "Ilk kez yazÄ± yaz", {1000, 2, 5}}, //1
 	{"Ilk Komut", "Ilk kez komut kullan", {1000, 3, 5}} //2
 };
 new MyMedals[MAX_PLAYERS][sizeof(MedalInfo)];
@@ -771,13 +771,13 @@ main()
 	getdate(Yil, Ay, Gun), gettime(Saat, Dakika, Saniye);
 	print("																");
 	print("																");
-	print("\t» ===============[E][X][C][I][S][I][O][N]=============== «");
-	print("\t»                                                        «");
-	print("\t»                       Owsla Gaming                     «");
-	print("\t»                         Excision                       «");
-	print("\t»                                                        «");
-	print("\t» ===============[E][X][C][I][S][I][O][N]=============== «");
-	printf("\t» =========== Tarih: %d/%d/%d Saat: %02d:%02d:%02d =========== «",Gun, Ay, Yil, Saat, Dakika, Saniye);
+	print("\tÂ» ===============[E][X][C][I][S][I][O][N]=============== Â«");
+	print("\tÂ»                                                        Â«");
+	print("\tÂ»                       Owsla Gaming                     Â«");
+	print("\tÂ»                         Excision                       Â«");
+	print("\tÂ»                                                        Â«");
+	print("\tÂ» ===============[E][X][C][I][S][I][O][N]=============== Â«");
+	printf("\tÂ» =========== Tarih: %d/%d/%d Saat: %02d:%02d:%02d =========== Â«",Gun, Ay, Yil, Saat, Dakika, Saniye);
 	print("																");
 	print("																");
 }
@@ -806,11 +806,11 @@ public OnGameModeInit()
 	mysql_log(ERROR | WARNING);
 	if (Owsla == MYSQL_INVALID_HANDLE || mysql_errno(Owsla) != 0)
 	{
-		print("MySQL baðlantýsý saðlanamadý, server kapatýlýyor!");
+		print("MySQL baÄŸlantÄ±sÄ± saÄŸlanamadÄ±, server kapatÄ±lÄ±yor!");
 		SendRconCommand("exit");
 		return 1;
 	}
-	print("MySQL baðlantýsý baþarýlý!");
+	print("MySQL baÄŸlantÄ±sÄ± baÅŸarÄ±lÄ±!");
     CreateMysqlTables();
     
   	mysql_tquery(Owsla, "SELECT * FROM `spawnlar`", "LoadSpawns");
@@ -923,14 +923,14 @@ public OnPlayerConnect(playerid)
 
 		if(ban_Bitis > gettime())
 		{
-			format(str, sizeof str,  "{ffffff}Hesabýnýz yasaklanmýþ "ANA_RENK"%s\n\n\
-									\t{ffffff}» Banlayan Admin: "ANA_RENK"%s\n\
-									\t{ffffff}» Banlandýðýn IP: "ANA_RENK"%s\n\
-									\t{ffffff}» Sebep: "ANA_RENK"%s\n\
-									\t{ffffff}» Açýlacaðý tarih: "ANA_RENK"%s\n\
-									\t{ffffff}» Kalan gün: "ANA_RENK"%d\n\
-									\t{ffffff}» Nerede atýldý?: %s", ban_Name, ban_Admin, ban_IP, ban_Sebep, ReturnDate(ban_Bitis), (ban_Bitis - gettime())/86400, (ban_Durum == 0) ? ("{FF0000}Offline") : ("{00FF00}Online"));
-			ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Süreli Ban", str, "Tamam", "");
+			format(str, sizeof str,  "{ffffff}HesabÄ±nÄ±z yasaklanmÄ±ÅŸ "ANA_RENK"%s\n\n\
+									\t{ffffff}Â» Banlayan Admin: "ANA_RENK"%s\n\
+									\t{ffffff}Â» BanlandÄ±ÄŸÄ±n IP: "ANA_RENK"%s\n\
+									\t{ffffff}Â» Sebep: "ANA_RENK"%s\n\
+									\t{ffffff}Â» AÃ§Ä±lacaÄŸÄ± tarih: "ANA_RENK"%s\n\
+									\t{ffffff}Â» Kalan gÃ¼n: "ANA_RENK"%d\n\
+									\t{ffffff}Â» Nerede atÄ±ldÄ±?: %s", ban_Name, ban_Admin, ban_IP, ban_Sebep, ReturnDate(ban_Bitis), (ban_Bitis - gettime())/86400, (ban_Durum == 0) ? ("{FF0000}Offline") : ("{00FF00}Online"));
+			ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}SÃ¼reli Ban", str, "Tamam", "");
 			KickPlayer(playerid);
 			cache_delete(VeriCek);
 			return 1;
@@ -948,8 +948,8 @@ public OnPlayerConnect(playerid)
     SendDeathMessage(INVALID_PLAYER_ID, playerid, 200);
     
     for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    SendClientMessage(playerid, 0x93FF93FF,"Owsla Gaming {FFFFFF}Serverine Hoþgeldiniz");
-    SendClientMessage(playerid, 0xFFFFFFFF, "Serveri "ANA_RENK"favorilere {FFFFFF}eklemeyi unutmayýn!");
+    SendClientMessage(playerid, 0x93FF93FF,"Owsla Gaming {FFFFFF}Serverine HoÅŸgeldiniz");
+    SendClientMessage(playerid, 0xFFFFFFFF, "Serveri "ANA_RENK"favorilere {FFFFFF}eklemeyi unutmayÄ±n!");
     format(str, sizeof(str), "Sunucu rekoru "ANA_RENK"%d/%d {FFFFFF}oyuncu!", ServerInfo[Rekor], GetMaxPlayers());
     SendClientMessage(playerid, 0xFFFFFFFF, str);
     
@@ -958,7 +958,7 @@ public OnPlayerConnect(playerid)
 	{
   		ServerInfo[Rekor] = Iter_Count(Player);
 
-		printf("Rekor » Sunucu yeni bir rekor kirdi. (%d/%d oyuncu ile)", Iter_Count(Player), GetMaxPlayers());
+		printf("Rekor Â» Sunucu yeni bir rekor kirdi. (%d/%d oyuncu ile)", Iter_Count(Player), GetMaxPlayers());
 		GameTextForAll("~r~~h~Rekor!", 5000, 3);
 		format(str, sizeof(str), "~y~~h~[Rekor] ~w~~h~Rekor kirildigi icin herkese %d$ + %d skor + %d exp verildi! ~r~~h~(%d/%d)", ServerInfo[Rekor]*5000, ServerInfo[Rekor]*5, ServerInfo[Rekor]*10, Iter_Count(Player), GetMaxPlayers());
  		TextMesaji(TurkceKarakter(str));
@@ -1060,7 +1060,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SHA256_PassHash(inputtext, PlayerInfo[playerid][Salt], hashed_pass, 65);
 			if(strcmp(hashed_pass, PlayerInfo[playerid][Password]) == 0)
 			{
-				Bilgi(playerid, "Bilgi » {FFFFFF}Basariyla hesabiniza giriþ yaptýnýz!");
+				Bilgi(playerid, "Bilgi Â» {FFFFFF}Basariyla hesabiniza giriÅŸ yaptÄ±nÄ±z!");
 				cache_set_active(PlayerInfo[playerid][Cache_ID]);
 				AssignPlayerData(playerid);
 				cache_delete(PlayerInfo[playerid][Cache_ID]);
@@ -1080,14 +1080,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				PlayerInfo[playerid][LoginAttempts]++;
 				if(PlayerInfo[playerid][LoginAttempts] >= 3) return KickReason(playerid, "Hatali Giris", "Sistem");
-				ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}Giris", "{FFFFFF}Yanlis sifre, lütfen doðru þifreyi giriniz", "Giris", "Cikis");
+				ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}Giris", "{FFFFFF}Yanlis sifre, lÃ¼tfen doÄŸru ÅŸifreyi giriniz", "Giris", "Cikis");
 			}
 		}
 		case DIALOG_REGISTER:
 		{
 		    if(PlayerInfo[playerid][IsLoggedIn] == true) return KickReason(playerid, "Register Hack", "Sistem");
 			if(!response) return Kick(playerid);
-			if(strlen(inputtext) <= 5) return ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}Kayýt", "{FFFFFF}Sifreniz 5 karakterden uzun olmalýdýr, lütfen farklý bir þifre giriniz.", "Kayit", "Cikis");
+			if(strlen(inputtext) <= 5) return ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}KayÄ±t", "{FFFFFF}Sifreniz 5 karakterden uzun olmalÄ±dÄ±r, lÃ¼tfen farklÄ± bir ÅŸifre giriniz.", "Kayit", "Cikis");
 			for(new i = 0; i < 16; i++) PlayerInfo[playerid][Salt][i] = random(94) + 33;
 			SHA256_PassHash(inputtext, PlayerInfo[playerid][Salt], PlayerInfo[playerid][Password], 65);
 			new query[256];
@@ -1100,9 +1100,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    {
 		        switch(listitem)
 				{
-				    case 0: ShowPlayerDialog(playerid, DIALOG_CONFIG_PING, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Max Ping", "{FFFFFF}Max pingi deðitirmek için aþaðýya deðer giriniz.", "Degistir", "Geri");
-					case 1: ShowPlayerDialog(playerid, DIALOG_CONFIG_TIME, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Time", "{FFFFFF}Server saatini deðitirmek için aþaðýya deðer giriniz.", "Degistir", "Geri");
-					case 2: ShowPlayerDialog(playerid, DIALOG_CONFIG_WEATHER, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Weather", "{FFFFFF}Server havasýný deðitirmek için aþaðýya deðer giriniz.", "Degistir", "Geri");
+				    case 0: ShowPlayerDialog(playerid, DIALOG_CONFIG_PING, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Max Ping", "{FFFFFF}Max pingi deÄŸitirmek iÃ§in aÅŸaÄŸÄ±ya deÄŸer giriniz.", "Degistir", "Geri");
+					case 1: ShowPlayerDialog(playerid, DIALOG_CONFIG_TIME, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Time", "{FFFFFF}Server saatini deÄŸitirmek iÃ§in aÅŸaÄŸÄ±ya deÄŸer giriniz.", "Degistir", "Geri");
+					case 2: ShowPlayerDialog(playerid, DIALOG_CONFIG_WEATHER, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Weather", "{FFFFFF}Server havasÄ±nÄ± deÄŸitirmek iÃ§in aÅŸaÄŸÄ±ya deÄŸer giriniz.", "Degistir", "Geri");
 					case 3:
 					{
 					    switch(ServerInfo[Headshot])
@@ -1142,7 +1142,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						    }
 						    case false:
 						    {
-						        ShowPlayerDialog(playerid, DIALOG_CONFIG_LOCK, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Server Kilit", "{FFFFFF}Serveri kilitlemek için aþaðýya istediðiniz þifreyi girin!", "Kilitle", "Geri");
+						        ShowPlayerDialog(playerid, DIALOG_CONFIG_LOCK, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Server Kilit", "{FFFFFF}Serveri kilitlemek iÃ§in aÅŸaÄŸÄ±ya istediÄŸiniz ÅŸifreyi girin!", "Kilitle", "Geri");
 						    }
 						}
 					}
@@ -1238,7 +1238,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		case DIALOG_CONFIG_LOCK:
 		{
 		    if(!response) return ShowConfigDialog(playerid);
-			if(strlen(inputtext) > 10) return ShowPlayerDialog(playerid, DIALOG_CONFIG_LOCK, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Server Kilit", "{FFFFFF}Serveri kilitlemek için aþaðýya istediðiniz þifreyi girin!\nMax 10 karakter!", "Kilitle", "Geri");
+			if(strlen(inputtext) > 10) return ShowPlayerDialog(playerid, DIALOG_CONFIG_LOCK, DIALOG_STYLE_INPUT, ""ANA_RENK"Owsla Gaming - {FFFFFF}Server Kilit", "{FFFFFF}Serveri kilitlemek iÃ§in aÅŸaÄŸÄ±ya istediÄŸiniz ÅŸifreyi girin!\nMax 10 karakter!", "Kilitle", "Geri");
             ServerInfo[Kilit] = true;
 			new str[128];
 			format(str, sizeof(str), "password %s", inputtext);
@@ -1260,12 +1260,12 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						    case true:
 							{
 								PlayerInfo[playerid][PMengel] = false;
-								Bilgi(playerid, "Bilgi » {FFFFFF}Özel mesaj durumunuz pasif hale getirildi.");
+								Bilgi(playerid, "Bilgi Â» {FFFFFF}Ã–zel mesaj durumunuz pasif hale getirildi.");
 						    }
 						    case false:
 						    {
 								PlayerInfo[playerid][PMengel] = true;
-								Bilgi(playerid, "Bilgi » {FFFFFF}Özel mesaj durumunuz aktif hale getirildi.");
+								Bilgi(playerid, "Bilgi Â» {FFFFFF}Ã–zel mesaj durumunuz aktif hale getirildi.");
 						    }
 						}
 						ShowSettingsDialog(playerid);
@@ -1299,7 +1299,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			mysql_format(Owsla, str, sizeof(str), "DELETE FROM `bans` WHERE `kullanici` = '%e'", playername);
 			mysql_tquery(Owsla, str);
-			format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli oyuncunun sbaný kaldýrýldý.", playername);
+			format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli oyuncunun sbanÄ± kaldÄ±rÄ±ldÄ±.", playername);
 			Bilgi(playerid, str);
 		}
 		case DIALOG_UNNBAN:
@@ -1310,7 +1310,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			GetPVarString(playerid, varname, playername, 25);
 			mysql_format(Owsla, str, 256, "UPDATE `oyuncular` SET `Banned` = '0' WHERE `Name` = '%e'", playername);
 			mysql_tquery(Owsla, str);
-			format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli oyuncunun nbaný kaldýrýldý.", playername);
+			format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli oyuncunun nbanÄ± kaldÄ±rÄ±ldÄ±.", playername);
 			Bilgi(playerid, str);
 		}
 		case DIALOG_UNIPBAN:
@@ -1322,7 +1322,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			UnBlockIpAddress(ipadress);
 			mysql_format(Owsla, str, sizeof(str), "DELETE FROM `blockip` WHERE `ip` = '%e'", ipadress);
 			mysql_tquery(Owsla, str);
-			format(str, sizeof(str), "Bilgi » {FFFFFF}%s Ip adresinin engeli kaldýrýldý.", ipadress);
+			format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s Ip adresinin engeli kaldÄ±rÄ±ldÄ±.", ipadress);
 			Bilgi(playerid, str);
 		}
 	    case DIALOG_OBJECTS:
@@ -1332,7 +1332,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
  			inindex[playerid] = listitem;
 			if(AttachInfo[playerid][listitem][used1] == false) return ShowModelSelectionMenuEx(playerid, AttachmentObjectsList, sizeof(AttachmentObjectsList), "Obje Secin", 1);
 			format(str, sizeof(str), ""ANA_RENK"Owsla Gaming - {FFFFFF}Attachments (Slot %d)", listitem+1);
-			ShowPlayerDialog(playerid, DIALOG_OBJECTS1, DIALOG_STYLE_MSGBOX, str, "{FFFFFF}Seçtiðiniz slottaki objeyi düzenliyebilir veya kaldýrabilirsiniz", "Duzenle", "Kaldýr");
+			ShowPlayerDialog(playerid, DIALOG_OBJECTS1, DIALOG_STYLE_MSGBOX, str, "{FFFFFF}SeÃ§tiÄŸiniz slottaki objeyi dÃ¼zenliyebilir veya kaldÄ±rabilirsiniz", "Duzenle", "KaldÄ±r");
 		}
 		case DIALOG_OBJECTS1:
 		{
@@ -1340,7 +1340,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			RemovePlayerAttachedObject(playerid, inindex[playerid]);
 			AttachInfo[playerid][inindex[playerid]][used1] = false;
 			new str[144];
-			Bilgi(playerid, "Bilgi » {FFFFFF}Seçtiðiniz objeyi kaldýrdýnýz.");
+			Bilgi(playerid, "Bilgi Â» {FFFFFF}SeÃ§tiÄŸiniz objeyi kaldÄ±rdÄ±nÄ±z.");
 			mysql_format(Owsla, str, sizeof(str), "DELETE FROM `objects` WHERE `UserID` = '%d' AND `Index` = '%d'", PlayerInfo[playerid][UserID], inindex[playerid]);
 			mysql_tquery(Owsla, str);
 		}
@@ -1390,7 +1390,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    }else
 			{
 			    PlayerInfo[playerid][ListPage] = 0;
-		 		Hata(playerid, "Hata » {FFFFFF}Daha fazla bug rapor bulunmamakta.");
+		 		Hata(playerid, "Hata Â» {FFFFFF}Daha fazla bug rapor bulunmamakta.");
 		    }
 			cache_delete(VeriCek);
 		}
@@ -1425,7 +1425,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    }else
 			{
 			    PlayerInfo[playerid][ListPage] = 0;
-		 		Hata(playerid, "Hata » {FFFFFF}Daha fazla güncelleme bulunmamakta.");
+		 		Hata(playerid, "Hata Â» {FFFFFF}Daha fazla gÃ¼ncelleme bulunmamakta.");
 		    }
 			cache_delete(VeriCek);
 	    }
@@ -1457,7 +1457,7 @@ public OnPlayerModelSelectionEx(playerid, response, extraid, modelid)
 	    if(response)
 	    {
 	        inmodel[playerid] = modelid;
-		    ShowPlayerDialog(playerid, DIALOG_OBJECTS2, DIALOG_STYLE_LIST, ""ANA_RENK"Owsla Gaming - {FFFFFF}Attachments", "Bel\nBas\nSol Üst Kol\nSað Üst Kol\nSol El\nSað El\nSol Kýsým\nSað Kýsým\nSol Ayak\nSað Ayak\nSol Baldýr\nSað Baldýr\nSol Ön Kol\nSað Ön Kol\nSol Omuz\nSað Omuz\nBoyun\nÇene", "Seç", "Iptal");
+		    ShowPlayerDialog(playerid, DIALOG_OBJECTS2, DIALOG_STYLE_LIST, ""ANA_RENK"Owsla Gaming - {FFFFFF}Attachments", "Bel\nBas\nSol Ãœst Kol\nSaÄŸ Ãœst Kol\nSol El\nSaÄŸ El\nSol KÄ±sÄ±m\nSaÄŸ KÄ±sÄ±m\nSol Ayak\nSaÄŸ Ayak\nSol BaldÄ±r\nSaÄŸ BaldÄ±r\nSol Ã–n Kol\nSaÄŸ Ã–n Kol\nSol Omuz\nSaÄŸ Omuz\nBoyun\nÃ‡ene", "SeÃ§", "Iptal");
 		}
 	}
 	return 1;
@@ -1480,7 +1480,7 @@ public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Fl
         AttachInfo[playerid][index][fScaleZ1] = fScaleZ;
 	}
 	new query[144];
-    Bilgi(playerid, "Bilgi » {FFFFFF}Obje kaydedildi.");
+    Bilgi(playerid, "Bilgi Â» {FFFFFF}Obje kaydedildi.");
     SetPlayerAttachedObject(playerid, index, modelid, boneid, AttachInfo[playerid][index][fOffsetX1], AttachInfo[playerid][index][fOffsetY1], AttachInfo[playerid][index][fOffsetZ1], AttachInfo[playerid][index][fRotX1], AttachInfo[playerid][index][fRotY1], AttachInfo[playerid][index][fRotZ1], AttachInfo[playerid][index][fScaleX1], AttachInfo[playerid][index][fScaleY1], AttachInfo[playerid][index][fScaleZ1]);
 	mysql_format(Owsla, query, sizeof(query), "SELECT * FROM `objects` WHERE `Index` = '%d' AND `UserID` = '%d'", index, PlayerInfo[playerid][UserID]);
 	mysql_tquery(Owsla, query, "OnObjectSave", "iiii", playerid, index, modelid, boneid);
@@ -1493,22 +1493,22 @@ public OnPlayerDamage(&playerid, &Float:amount, &issuerid, &weapon, &bodypart)
         if(IsPlayerPaused(playerid)) return 0;
 		if(PlayerInfo[playerid][SpawnBolgesinde] == true)
 		{
-        	Hata(issuerid, "Hata » {FFFFFF}Vurmuþ olduðunuz oyuncunu spawn bölgesinde.");
+        	Hata(issuerid, "Hata Â» {FFFFFF}VurmuÅŸ olduÄŸunuz oyuncunu spawn bÃ¶lgesinde.");
 	    	return 0;
 		}
 		if(PlayerInfo[playerid][SpawnBolgesinde] == true)
 		{
-        	Hata(issuerid, "Hata » {FFFFFF}Spawn bölgesinde kimseye vuramazsýnýz.");
+        	Hata(issuerid, "Hata Â» {FFFFFF}Spawn bÃ¶lgesinde kimseye vuramazsÄ±nÄ±z.");
 			return 0;
 		}
 		if(PlayerInfo[playerid][God] == true)
 		{
-		    Bilgi(issuerid, "Bilgi » {FFFFFF}Vurmuþ olduðunuz oyuncunun GOD özelliði bulunmakta.");
+		    Bilgi(issuerid, "Bilgi Â» {FFFFFF}VurmuÅŸ olduÄŸunuz oyuncunun GOD Ã¶zelliÄŸi bulunmakta.");
 			return 0;
 		}
 		if(PlayerInfo[issuerid][God] == true)
 		{
-		    Bilgi(issuerid, "Bilgi » {FFFFFF}GOD özelliðiniz aktif iken kimseye vuramazsýnýz.");
+		    Bilgi(issuerid, "Bilgi Â» {FFFFFF}GOD Ã¶zelliÄŸiniz aktif iken kimseye vuramazsÄ±nÄ±z.");
 			return 0;
 		}
 		if(ServerInfo[Headshot] == 1 && weapon == 34 && bodypart == 9)
@@ -1553,7 +1553,7 @@ public OnPlayerEnterDynamicArea(playerid, areaid)
 	{
 		if(areaid == SpawnInfo[i][spawnArea])
 		{
-		    Bilgi(playerid, "Bilgi » {FFFFFF}Spawn alanýna girdiniz. Bu alanda kimseye vuramaz, araçla giremezsiniz.");
+		    Bilgi(playerid, "Bilgi Â» {FFFFFF}Spawn alanÄ±na girdiniz. Bu alanda kimseye vuramaz, araÃ§la giremezsiniz.");
 			PlayerInfo[playerid][SpawnBolgesinde] = true;
 			PlayerInfo[playerid][SpawnID] = i;
 			GangZoneFlashForPlayer(playerid, PlayerInfo[playerid][SpawnID], 0xFF990066);
@@ -1570,7 +1570,7 @@ public OnPlayerLeaveDynamicArea(playerid, areaid)
 		{
             GangZoneStopFlashForAll(PlayerInfo[playerid][SpawnID]);
 		    PlayerInfo[playerid][SpawnID] = -1;
-		    Bilgi(playerid, "Bilgi » {FFFFFF}Spawn alanýndan çýktýnýz.");
+		    Bilgi(playerid, "Bilgi Â» {FFFFFF}Spawn alanÄ±ndan Ã§Ä±ktÄ±nÄ±z.");
 		    PlayerInfo[playerid][SpawnBolgesinde] = false;
 		}
 	}
@@ -1639,13 +1639,13 @@ public OnPlayerCommandReceived(playerid, cmd[], params[], flags)
 {
 	if(GetPlayerState(playerid) == PLAYER_STATE_WASTED || GetPlayerState(playerid) == PLAYER_STATE_NONE)
 	{
-	    Hata(playerid, "Hata » {FFFFFF}Spawn olmadan komut kullanamazsýnýz.");
+	    Hata(playerid, "Hata Â» {FFFFFF}Spawn olmadan komut kullanamazsÄ±nÄ±z.");
 	    return 0;
 	}
 	if(GetTickCount() < PlayerInfo[playerid][YaraliTime])
  	{
 		new str[128];
-    	format(str, sizeof(str),"Hata » {FFFFFF}Yarali iken komut kullanamazsýn. (%d Saniye)", ConvertTimer(PlayerInfo[playerid][YaraliTime] - GetTickCount()));
+    	format(str, sizeof(str),"Hata Â» {FFFFFF}Yarali iken komut kullanamazsÄ±n. (%d Saniye)", ConvertTimer(PlayerInfo[playerid][YaraliTime] - GetTickCount()));
 		Hata(playerid, str);
  		return 0;
 	}
@@ -1653,7 +1653,7 @@ public OnPlayerCommandReceived(playerid, cmd[], params[], flags)
     {
         if(PlayerInfo[playerid][Dmde] == true)
 		{
-		    Hata(playerid, "Hata » {FFFFFF}Su an dmde bulunuyorsunuz. Cikmak icin /dmcik yazin.");
+		    Hata(playerid, "Hata Â» {FFFFFF}Su an dmde bulunuyorsunuz. Cikmak icin /dmcik yazin.");
 	 		return 0;
     	}
 	}
@@ -1673,82 +1673,82 @@ public OnPlayerText(playerid, text[])
 {
 	if(GetPlayerState(playerid) == PLAYER_STATE_WASTED || GetPlayerState(playerid) == PLAYER_STATE_NONE)
 	{
-	    Hata(playerid, "Hata » {FFFFFF}Spawn olmadan konuþamazsýnýz.");
+	    Hata(playerid, "Hata Â» {FFFFFF}Spawn olmadan konuÅŸamazsÄ±nÄ±z.");
 	    return 0;
 	}
 	GiveMedal(playerid, 1);
     new str[256];
     if(text[0] == '#' && (PlayerInfo[playerid][Admin] >= 1 || IsPlayerAdmin(playerid)))
 	{
-		format(str, sizeof(str),"Admin Chat » {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
+		format(str, sizeof(str),"Admin Chat Â» {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
 		foreach(new i: Player) if(PlayerInfo[i][Admin] >= 1 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, str);
         printf("[admin chat] [%s]: %s", PlayerInfo[playerid][Name], text);
 	    return 0;
 	}
 	if(text[0] == '$' && (PlayerInfo[playerid][Admin] >= 1 || PlayerInfo[playerid][Anim] >= 1 || IsPlayerAdmin(playerid)))
 	{
-		format(str, sizeof(str),"Anim Chat » {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
+		format(str, sizeof(str),"Anim Chat Â» {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
 		foreach(new i: Player) if(PlayerInfo[i][Anim] >= 1 || PlayerInfo[i][Admin] >= 1 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, str);
     	printf("[anim chat] [%s]: %s", PlayerInfo[playerid][Name], text);
 	    return 0;
 	}
 	if(text[0] == '+' && (PlayerInfo[playerid][Admin] >= 1 || PlayerInfo[playerid][DJ] >= 1 || IsPlayerAdmin(playerid)))
 	{
-		format(str, sizeof(str),"DJ Chat » {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
+		format(str, sizeof(str),"DJ Chat Â» {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
 		foreach(new i: Player) if(PlayerInfo[i][DJ] >= 1 || PlayerInfo[i][Admin] >= 1 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, str);
     	printf("[dj chat] [%s]: %s", PlayerInfo[playerid][Name], text);
 	    return 0;
 	}
 	if(text[0] == '-' && (PlayerInfo[playerid][Admin] >= 1 || PlayerInfo[playerid][VIP] >= 1 || IsPlayerAdmin(playerid)))
 	{
-		format(str, sizeof(str),"VIP Chat » {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
+		format(str, sizeof(str),"VIP Chat Â» {a3ddee}%s(%i): {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, text[1]);
 		foreach(new i: Player) if(PlayerInfo[i][VIP] >= 1 || PlayerInfo[i][Admin] >= 1 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, str);
     	printf("[vip chat] [%s]: %s", PlayerInfo[playerid][Name], text);
 	    return 0;
 	}
 	if(IsPlayerAdmin(playerid))
 	{
-  		format(str, sizeof(str),"« {FFFFFF}RCON{%06x} » %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
+  		format(str, sizeof(str),"Â« {FFFFFF}RCON{%06x} Â» %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
   		SendClientMessageToAll(GetPlayerColor(playerid), str);
 		printf("[chat] [%s]: %s", PlayerInfo[playerid][Name], text);
 	    return 0;
 	}
  	if(PlayerInfo[playerid][Admin] >= 1)
  	{
-  		format(str, sizeof(str),"« {FFFFFF}GM{%06x} » %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
+  		format(str, sizeof(str),"Â« {FFFFFF}GM{%06x} Â» %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
   		SendClientMessageToAll(GetPlayerColor(playerid), str);
 		printf("[chat] [%s]: %s", PlayerInfo[playerid][Name], text);
         return 0;
 	}
 	if(ServerInfo[Chat] == false)
 	{
-	    Hata(playerid, "Hata » {FFFFFF}Ana chat admin tarafýndan kapatýlmýþ.");
+	    Hata(playerid, "Hata Â» {FFFFFF}Ana chat admin tarafÄ±ndan kapatÄ±lmÄ±ÅŸ.");
 	    return 0;
 	}
 	if(PlayerInfo[playerid][Anim] >= 1)
 	{
-  		format(str, sizeof(str),"« {FFFFFF}ANM{%06x} » %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
+  		format(str, sizeof(str),"Â« {FFFFFF}ANM{%06x} Â» %s({FFFFFF}%i{%06x}): {FFFFFF}%s", GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
  		SendClientMessageToAll(GetPlayerColor(playerid), str);
 		printf("[chat] [%s]: %s", PlayerInfo[playerid][Name], text);
         return 0;
 	}
 	if(PlayerInfo[playerid][DJ] >= 1)
 	{
-  		format(str, sizeof(str),"« {FFFFFF}DJ{%06x} » %s({FFFFFF}%i{%06x}): {FFFFFF}%s",GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
+  		format(str, sizeof(str),"Â« {FFFFFF}DJ{%06x} Â» %s({FFFFFF}%i{%06x}): {FFFFFF}%s",GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
  		SendClientMessageToAll(GetPlayerColor(playerid), str);
 		printf("[chat] [%s]: %s", PlayerInfo[playerid][Name], text);
         return 0;
 	}
 	if(PlayerInfo[playerid][VIP] >= 1)
 	{
-  		format(str, sizeof(str),"« {FFFFFF}VIP{%06x} » %s({FFFFFF}%i{%06x}): {FFFFFF}%s",GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
+  		format(str, sizeof(str),"Â« {FFFFFF}VIP{%06x} Â» %s({FFFFFF}%i{%06x}): {FFFFFF}%s",GetPlayerColor(playerid) >>> 8, PlayerInfo[playerid][Name], playerid, GetPlayerColor(playerid) >>> 8, ColouredText(text));
  		SendClientMessageToAll(GetPlayerColor(playerid), str);
 		printf("[chat] [%s]: %s", PlayerInfo[playerid][Name], text);
         return 0;
 	}
 	if(GetTickCount() < PlayerInfo[playerid][TalkTime])
 	{
-    	format(str, sizeof(str),"Hata » {FFFFFF}Tekrar konuþmak için {FF0000}%d {FFFFFF}saniye beklemelisin.", ConvertTimer(PlayerInfo[playerid][TalkTime] - GetTickCount()));
+    	format(str, sizeof(str),"Hata Â» {FFFFFF}Tekrar konuÅŸmak iÃ§in {FF0000}%d {FFFFFF}saniye beklemelisin.", ConvertTimer(PlayerInfo[playerid][TalkTime] - GetTickCount()));
 		Hata(playerid, str);
  		return 0;
 	}
@@ -1764,16 +1764,16 @@ public OnPlayerText(playerid, text[])
 flags:makeadmin(CMD_ADMIN);
 CMD:makeadmin(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new level, id;
-	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim » {FFFFFF}/makeadmin <Player/ID> <Level>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(level < 0 || level > 10) return Hata(playerid, "Hata » {FFFFFF}Maximum level 10, minimum level 0 girebilirsiniz!");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/makeadmin <Player/ID> <Level>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(level < 0 || level > 10) return Hata(playerid, "Hata Â» {FFFFFF}Maximum level 10, minimum level 0 girebilirsiniz!");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[100];
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s sizi %i seviye yonetici yapti.",  PlayerInfo[playerid][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s sizi %i seviye yonetici yapti.",  PlayerInfo[playerid][Name], level);
 	Bilgi(id, str);
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli oyuncuyu %i seviye yonetici yaptiniz.",  PlayerInfo[id][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli oyuncuyu %i seviye yonetici yaptiniz.",  PlayerInfo[id][Name], level);
 	Bilgi(playerid, str);
 	PlayerInfo[id][Admin] = level;
 	PlayerInfo[id][Anim] = 0;
@@ -1785,16 +1785,16 @@ CMD:makeadmin(playerid, params[])
 flags:makeanim(CMD_ADMIN);
 CMD:makeanim(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new level, id;
-	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim » {FFFFFF}/makeanim <Player/ID> <Level>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(level < 0 || level > 5) return Hata(playerid, "Hata » {FFFFFF}Maximum level 5, minimum level 0 girebilirsiniz!");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/makeanim <Player/ID> <Level>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(level < 0 || level > 5) return Hata(playerid, "Hata Â» {FFFFFF}Maximum level 5, minimum level 0 girebilirsiniz!");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[100];
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s sizi %i seviye animator yapti.",  PlayerInfo[playerid][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s sizi %i seviye animator yapti.",  PlayerInfo[playerid][Name], level);
 	Bilgi(id, str);
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli oyuncuyu %i seviye animator yaptiniz.",  PlayerInfo[id][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli oyuncuyu %i seviye animator yaptiniz.",  PlayerInfo[id][Name], level);
 	Bilgi(playerid, str);
 	PlayerInfo[id][Anim] = level;
 	PlayerInfo[id][Admin] = 0;
@@ -1806,16 +1806,16 @@ CMD:makeanim(playerid, params[])
 flags:makedj(CMD_ADMIN);
 CMD:makedj(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new level, id;
-	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim » {FFFFFF}/makedj <Player/ID> <Level>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(level < 0 || level > 3) return Hata(playerid, "Hata » {FFFFFF}Maximum level 3, minimum level 0 girebilirsiniz!");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ui", id, level)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/makedj <Player/ID> <Level>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(level < 0 || level > 3) return Hata(playerid, "Hata Â» {FFFFFF}Maximum level 3, minimum level 0 girebilirsiniz!");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[100];
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s sizi %i seviye dj yapti.",  PlayerInfo[playerid][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s sizi %i seviye dj yapti.",  PlayerInfo[playerid][Name], level);
 	Bilgi(id, str);
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli oyuncuyu %i seviye dj yaptiniz.",  PlayerInfo[id][Name], level);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli oyuncuyu %i seviye dj yaptiniz.",  PlayerInfo[id][Name], level);
 	Bilgi(playerid, str);
 	PlayerInfo[id][DJ] = level;
 	PlayerInfo[id][Admin] = 0;
@@ -1827,16 +1827,16 @@ CMD:makedj(playerid, params[])
 flags:makevip(CMD_ADMIN);
 CMD:makevip(playerid,params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id,sure,level;
-	if(sscanf(params,"uii", id, level, sure)) return Kullanim(playerid, "Kullanim » {FFFFFF}/makevip <Player/ID> <Level> <Gun>");
-	if(!IsPlayerConnected(playerid)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(level < 0 || level > 3) return Hata(playerid, "Hata » {FFFFFF}Maximum level 3, minimum level 0 girebilirsiniz!");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params,"uii", id, level, sure)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/makevip <Player/ID> <Level> <Gun>");
+	if(!IsPlayerConnected(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(level < 0 || level > 3) return Hata(playerid, "Hata Â» {FFFFFF}Maximum level 3, minimum level 0 girebilirsiniz!");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[200];
-	format(str,sizeof(str),"Bilgi » {FFFFFF}%s sizi %d günlük %s {FFFFFF}yaptý. Vip bitiþ tarihi: %s", PlayerInfo[playerid][Name], sure, GetVipLevel(id), ReturnDate(gettime()+sure*86400));
+	format(str,sizeof(str),"Bilgi Â» {FFFFFF}%s sizi %d gÃ¼nlÃ¼k %s {FFFFFF}yaptÄ±. Vip bitiÅŸ tarihi: %s", PlayerInfo[playerid][Name], sure, GetVipLevel(id), ReturnDate(gettime()+sure*86400));
 	Bilgi(id, str);
-	format(str,sizeof(str),"Bilgi » {FFFFFF}%s isimli oyuncuyu %d günlük %s {FFFFFF}yaptýnýz. Vip bitiþ tarihi: %s", PlayerInfo[id][Name], sure, GetVipLevel(id), ReturnDate(gettime()+sure*86400));
+	format(str,sizeof(str),"Bilgi Â» {FFFFFF}%s isimli oyuncuyu %d gÃ¼nlÃ¼k %s {FFFFFF}yaptÄ±nÄ±z. Vip bitiÅŸ tarihi: %s", PlayerInfo[id][Name], sure, GetVipLevel(id), ReturnDate(gettime()+sure*86400));
 	Bilgi(playerid, str);
 	PlayerInfo[id][VIPSure] = gettime()+sure*86400;
 	PlayerInfo[id][VIP] = level;
@@ -1851,17 +1851,17 @@ CMD:makevip(playerid,params[])
 flags:createdm(CMD_ADMIN);
 CMD:createdm(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id = Iter_Free(Dmler), isim[25], weap1, weap2, weap3, Float: can, Float: zirh, int, world;
-	if(id == -1) return Hata(playerid, "Hata » {FFFFFF}Daha fazla dm oluþturamazsýnýz.");
+	if(id == -1) return Hata(playerid, "Hata Â» {FFFFFF}Daha fazla dm oluÅŸturamazsÄ±nÄ±z.");
     if(sscanf(params, "dddffdds[25]", weap1, weap2, weap3, can, zirh, int, world, isim))
 	{
-	    Kullanim(playerid, "Kullanim » {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ýsim>");
-		return Bilgi(playerid, "Bilgi » {FFFFFF}Kullanmak istemediðiniz silahlar için 0 yazýnýz. /createdm 24 0 0 100 100 0 10 deagle gibi.");
+	    Kullanim(playerid, "Kullanim Â» {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ä°sim>");
+		return Bilgi(playerid, "Bilgi Â» {FFFFFF}Kullanmak istemediÄŸiniz silahlar iÃ§in 0 yazÄ±nÄ±z. /createdm 24 0 0 100 100 0 10 deagle gibi.");
     }
-    if(!IsValidWeapon(weap1) || !IsValidWeapon(weap2) || !IsValidWeapon(weap3)) return Kullanim(playerid, "Kullanim » {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ýsim>");
-	if(can <= 0 || can > 100) return Kullanim(playerid, "Kullanim » {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ýsim>");
-	if(zirh < 0 || zirh > 100) return Kullanim(playerid, "Kullanim » {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ýsim>");
+    if(!IsValidWeapon(weap1) || !IsValidWeapon(weap2) || !IsValidWeapon(weap3)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ä°sim>");
+	if(can <= 0 || can > 100) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ä°sim>");
+	if(zirh < 0 || zirh > 100) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/createdm <Silah 1> <Silah 2> <Silah 3> <Can> <Zirh> <Int> <World> <Ä°sim>");
 	Iter_Add(Dmler, id);
 	format(DmInfo[id][dName], 25, "%s", isim);
 	DmInfo[id][dWeap1] = weap1;
@@ -1875,16 +1875,16 @@ CMD:createdm(playerid, params[])
 	new query[512];
 	mysql_format(Owsla, query, sizeof(query), "INSERT INTO `dmler` (`dID`, `dName`, `dWeap1`, `dWeap2`, `dWeap3`, `dPosX`, `dPosY`, `dPosZ`, `dInt`, `dWorld`, `dCan`, `dZirh`) VALUES ('%d', '%e', '%d', '%d', '%d', '%f', '%f', '%f', '%d', '%d', '%f', '%f')", id, DmInfo[id][dName], DmInfo[id][dWeap1], DmInfo[id][dWeap2], DmInfo[id][dWeap3], DmInfo[id][dPos][0], DmInfo[id][dPos][1], DmInfo[id][dPos][2], DmInfo[id][dInt], DmInfo[id][dWorld], DmInfo[id][dHP][0], DmInfo[id][dHP][1]);
     mysql_tquery(Owsla, query);
-	format(query, sizeof(query), "Bilgi » {FFFFFF}%s isimli dmyi oluþturdunuz.", DmInfo[id][dName]);
+	format(query, sizeof(query), "Bilgi Â» {FFFFFF}%s isimli dmyi oluÅŸturdunuz.", DmInfo[id][dName]);
 	Bilgi(playerid, query);
 	return 1;
 }
 flags:lsay(CMD_ADMIN);
 CMD:lsay(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new yazi[128];
-	if(sscanf(params, "s[128]", yazi)) return Kullanim(playerid, "Kullanim » {FFFFFF}/lsay <Yazi>");
+	if(sscanf(params, "s[128]", yazi)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/lsay <Yazi>");
 	TextMesaji(TurkceKarakter(yazi));
 	return 1;
 }
@@ -1892,7 +1892,7 @@ CMD:lsay(playerid, params[])
 flags:config(CMD_ADMIN);
 CMD:config(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     ShowConfigDialog(playerid);
 	return 1;
 }
@@ -1900,7 +1900,7 @@ CMD:config(playerid, params[])
 flags:spawnekle(CMD_ADMIN);
 CMD:spawnekle(playerid)
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	SpawnEkle(playerid);
 	return 1;
 }
@@ -1908,18 +1908,18 @@ CMD:spawnekle(playerid)
 flags:spawnsil(CMD_ADMIN);
 CMD:spawnsil(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id;
-	if(sscanf(params, "i", id)) return  Kullanim(playerid, "Kullanim » {FFFFFF}/spawnsil <ID>");
-    if(!Iter_Contains(Spawnlar, id)) return Hata(playerid, "Hata » {FFFFFF}Böyle bir spawn yok.");
+	if(sscanf(params, "i", id)) return  Kullanim(playerid, "Kullanim Â» {FFFFFF}/spawnsil <ID>");
+    if(!Iter_Contains(Spawnlar, id)) return Hata(playerid, "Hata Â» {FFFFFF}BÃ¶yle bir spawn yok.");
 	SpawnSil(id);
-	Bilgi(playerid, "Bilgi » {FFFFFF}Spawni sildiniz.");
+	Bilgi(playerid, "Bilgi Â» {FFFFFF}Spawni sildiniz.");
 	return 1;
 }
 flags:alladmins(CMD_ADMIN);
 CMD:alladmins(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	foreach(new i: Player) SavePlayer(i);
 	new query[75];
 	mysql_format(Owsla, query, sizeof(query), "SELECT `Admin`, `Name` FROM `oyuncular` ORDER BY `Admin` DESC LIMIT 30");
@@ -1947,7 +1947,7 @@ CMD:alladmins(playerid)
 flags:allanims(CMD_ADMIN);
 CMD:allanims(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	foreach(new i: Player) SavePlayer(i);
 	new query[75];
 	mysql_format(Owsla, query, sizeof(query), "SELECT `Anim`, `Name` FROM `oyuncular` ORDER BY `Anim` DESC LIMIT 30");
@@ -1975,7 +1975,7 @@ CMD:allanims(playerid)
 flags:alldjs(CMD_ADMIN);
 CMD:alldjs(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	foreach(new i: Player) SavePlayer(i);
 	new query[75];
 	mysql_format(Owsla, query, sizeof(query), "SELECT `DJ`, `Name` FROM `oyuncular` ORDER BY `DJ` DESC LIMIT 30");
@@ -2003,15 +2003,15 @@ CMD:alldjs(playerid)
 flags:setcash(CMD_ADMIN);
 CMD:setcash(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, miktar;
-	if(sscanf(params, "ud", id, miktar)) return Kullanim(playerid, "Kullanim » {FFFFFF}/setcash <Nick/ID> <Miktar>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ud", id, miktar)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/setcash <Nick/ID> <Miktar>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[156];
-  	format(str, sizeof str, "Bilgi » {FFFFFF}%s(%i) isimli oyuncunun parasini $%s olarak ayarladiniz.", PlayerInfo[id][Name], id, formatInt(miktar));
+  	format(str, sizeof str, "Bilgi Â» {FFFFFF}%s(%i) isimli oyuncunun parasini $%s olarak ayarladiniz.", PlayerInfo[id][Name], id, formatInt(miktar));
   	Bilgi(playerid, str);
-  	format(str, sizeof str, "Bilgi » {FFFFFF}Admin %s(%i) sizin paranizi $%s olarak ayarladi.", PlayerInfo[playerid][Name], playerid, formatInt(miktar));
+  	format(str, sizeof str, "Bilgi Â» {FFFFFF}Admin %s(%i) sizin paranizi $%s olarak ayarladi.", PlayerInfo[playerid][Name], playerid, formatInt(miktar));
   	Bilgi(id, str);
   	ResetPlayerCash(id), GivePlayerCash(id, miktar);
 	return 1;
@@ -2020,15 +2020,15 @@ CMD:setcash(playerid, params[])
 flags:setscore(CMD_ADMIN);
 CMD:setscore(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, miktar;
-	if(sscanf(params, "ud", id, miktar)) return Kullanim(playerid, "Kullanim » {FFFFFF}/setscore <Nick/ID> <Miktar>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ud", id, miktar)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/setscore <Nick/ID> <Miktar>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[156];
-  	format(str, sizeof(str), "Bilgi » {FFFFFF}%s(%i) isimli oyuncunun skorunu %d olarak ayarladiniz.", PlayerInfo[id][Name], id, miktar);
+  	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s(%i) isimli oyuncunun skorunu %d olarak ayarladiniz.", PlayerInfo[id][Name], id, miktar);
   	Bilgi(playerid, str);
-  	format(str, sizeof(str), "Bilgi » {FFFFFF}Admin %s(%i) sizin skorunuzu %d olarak ayarladi.", PlayerInfo[playerid][Name], playerid, miktar);
+  	format(str, sizeof(str), "Bilgi Â» {FFFFFF}Admin %s(%i) sizin skorunuzu %d olarak ayarladi.", PlayerInfo[playerid][Name], playerid, miktar);
   	Bilgi(id, str);
   	SetPlayerScore(id, miktar);
 	return 1;
@@ -2036,9 +2036,9 @@ CMD:setscore(playerid, params[])
 flags:kickall(CMD_ADMIN);
 CMD:kickall(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new sbp[24];
-	if(sscanf(params, "s[24]", sbp)) return Kullanim(playerid, "Kullanim » {FFFFFF}/kickall <Sebep>");
+	if(sscanf(params, "s[24]", sbp)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/kickall <Sebep>");
 	new str[156];
 	format(str, sizeof(str), "~r~~h~~h~[Kick] ~w~~h~~h~Admin ~r~~h~%s ~w~~h~~h~herkesi kickledi. (~r~~h~%s~w~~h~~h~)", PlayerInfo[playerid][Name], sbp);
 	TextMesaji(TurkceKarakter(str));
@@ -2056,9 +2056,9 @@ CMD:kickall(playerid, params[])
 flags:killall(CMD_ADMIN);
 CMD:killall(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new sbp[24];
-	if(sscanf(params, "s[24]", sbp)) return Kullanim(playerid, "Kullanim » {FFFFFF}/killall <Sebep>");
+	if(sscanf(params, "s[24]", sbp)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/killall <Sebep>");
 	new str[156];
 	format(str, sizeof(str), "~r~~h~~h~[Kill] ~w~~h~~h~Admin ~r~~h~%s ~w~~h~~h~herkesi oldurdu. (~r~~h~%s~w~~h~~h~)", PlayerInfo[playerid][Name], sbp);
 	TextMesaji(TurkceKarakter(str));
@@ -2076,10 +2076,10 @@ CMD:killall(playerid, params[])
 flags:giveallmoney(CMD_ADMIN);
 CMD:giveallmoney(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new str[128], miktar;
-   	if(sscanf(params,"i", miktar)) return Kullanim(playerid, "Kullanim » {FFFFFF}/giveallmoney <Miktar>");
-    if((miktar < 5000) || (miktar > 100000)) return Hata(playerid, "Hata » {FFFFFF}En az $5000, en fazla $100000 girebilirsiniz.");
+   	if(sscanf(params,"i", miktar)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/giveallmoney <Miktar>");
+    if((miktar < 5000) || (miktar > 100000)) return Hata(playerid, "Hata Â» {FFFFFF}En az $5000, en fazla $100000 girebilirsiniz.");
     format(str, sizeof(str), "~r~~h~~h~[Prize] ~w~~h~%s adli yonetici tum oyunculara ~r~~h~$%s ~w~~h~~h~verdi.", PlayerInfo[playerid][Name], formatInt(miktar));
     TextMesaji(TurkceKarakter(str));
 	foreach(new i: Player) GivePlayerCash(i, miktar);
@@ -2089,10 +2089,10 @@ CMD:giveallmoney(playerid, params[])
 flags:giveallscore(CMD_ADMIN);
 CMD:giveallscore(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new str[128], miktar;
-   	if(sscanf(params,"i", miktar)) return Kullanim(playerid, "Kullanim » {FFFFFF}/giveallscore <Miktar>");
-    if(miktar > 100) return Hata(playerid, "Hata » {FFFFFF}En fazla 100 skor girebilirsiniz.");
+   	if(sscanf(params,"i", miktar)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/giveallscore <Miktar>");
+    if(miktar > 100) return Hata(playerid, "Hata Â» {FFFFFF}En fazla 100 skor girebilirsiniz.");
     format(str, sizeof(str), "~r~~h~~h~[Prize] ~w~~h~%s adli yonetici tum oyunculara ~r~~h~%d ~w~~h~~h~skor verdi.", PlayerInfo[playerid][Name], miktar);
     TextMesaji(TurkceKarakter(str));
 	foreach(new i: Player) GivePlayerScore(i, miktar);
@@ -2102,8 +2102,8 @@ CMD:giveallscore(playerid, params[])
 flags:spawnlar(CMD_ADMIN);
 CMD:spawnlar(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
-    if(Iter_Count(Spawnlar) == 0) return Hata(playerid, "Hata » {FFFFFF}Þuanda oluþturulmuþ spawn bulunmamakta.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
+    if(Iter_Count(Spawnlar) == 0) return Hata(playerid, "Hata Â» {FFFFFF}Åžuanda oluÅŸturulmuÅŸ spawn bulunmamakta.");
     new str[1024];
 	foreach(new i: Spawnlar)
 	{
@@ -2115,10 +2115,10 @@ CMD:spawnlar(playerid, params[])
 flags:addupdate(CMD_ADMIN);
 CMD:addupdate(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new updt[125], query[628], it = Iter_Free(Updates);
-    if(sscanf(params, "s[125]", updt)) return Kullanim(playerid, "Kullanim » {FFFFFF}/addupdate <Güncelleme>");
-    if(it == -1) return Hata(playerid, "Hata » {FFFFFF}Güncelleme notu sýnýrý þuan dolu, baþka bir zaman deneyin.");
+    if(sscanf(params, "s[125]", updt)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/addupdate <GÃ¼ncelleme>");
+    if(it == -1) return Hata(playerid, "Hata Â» {FFFFFF}GÃ¼ncelleme notu sÄ±nÄ±rÄ± ÅŸuan dolu, baÅŸka bir zaman deneyin.");
 
     Iter_Add(Updates, it);
 	mysql_format(Owsla, query, sizeof(query), "INSERT INTO `Updates` (`UpdateID`, `Admin`, `Update`) VALUES ('%d', '%e', '%e')", it, PlayerInfo[playerid][Name], updt);
@@ -2128,16 +2128,16 @@ CMD:addupdate(playerid, params[])
 flags:updatedel(CMD_ADMIN);
 CMD:updatedel(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 10 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new str[128], updateid;
-    if(sscanf(params, "i", updateid)) return Kullanim(playerid, "Kullanim » {FFFFFF}/updatedel <GüncellemeID>");
-    if(!Iter_Contains(Updates, updateid)) return Hata(playerid, "Hata » {FFFFFF}Bu id ye ait bir rapor bulunmamakta.");
+    if(sscanf(params, "i", updateid)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/updatedel <GÃ¼ncellemeID>");
+    if(!Iter_Contains(Updates, updateid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu id ye ait bir rapor bulunmamakta.");
 
 	Iter_Remove(Updates, updateid);
 	mysql_format(Owsla, str, sizeof(str), "DELETE FROM `Updates` WHERE `UpdateID` = '%d'", updateid);
 	mysql_tquery(Owsla, str);
 
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%d idli güncellemeyi sildiniz.", updateid);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%d idli gÃ¼ncellemeyi sildiniz.", updateid);
 	Bilgi(playerid, str);
     return 1;
 }
@@ -2145,13 +2145,13 @@ CMD:updatedel(playerid, params[])
 flags:getip(CMD_ADMIN);
 CMD:getip(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id;
-	if(sscanf(params,"i",id)) return Kullanim(playerid, "Kullanim » {FFFFFF}/getip <Id>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params,"i",id)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/getip <Id>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
     new str[128];
-    format(str, sizeof(str), "Bilgi » {FFFFFF}%s(%i) adlý oyuncunun IP adresi: %s", PlayerInfo[id][Name], id, PlayerInfo[id][IP]);
+    format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s(%i) adlÄ± oyuncunun IP adresi: %s", PlayerInfo[id][Name], id, PlayerInfo[id][IP]);
     Bilgi(playerid, str);
     return 1;
 }
@@ -2159,7 +2159,7 @@ CMD:getip(playerid, params[])
 flags:bugraporlar(CMD_ADMIN);
 CMD:bugraporlar(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     PlayerInfo[playerid][ListPage] = 0;
 
 	new str[128];
@@ -2180,7 +2180,7 @@ CMD:bugraporlar(playerid, params[])
         }
         ShowPlayerDialog(playerid, DIALOG_BUGRAPORLAR, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Bug Rapor", dialog, "Ileri", "Geri");
     }
-    else Hata(playerid, "Hata » {FFFFFF}Þuanda bug rapor bulunmamakta.");
+    else Hata(playerid, "Hata Â» {FFFFFF}Åžuanda bug rapor bulunmamakta.");
     cache_delete(VeriCek);
     return 1;
 }
@@ -2188,16 +2188,16 @@ CMD:bugraporlar(playerid, params[])
 flags:bugraporsil(CMD_ADMIN);
 CMD:bugraporsil(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 9 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
     new str[128], repid;
-    if(sscanf(params, "i", repid)) return Kullanim(playerid, "Kullanim » {FFFFFF}/bugraporsil <RaporID>");
-    if(!Iter_Contains(Raporlar, repid)) return Hata(playerid, "Hata » {FFFFFF}Bu id ye ait bir rapor bulunmamakta.");
+    if(sscanf(params, "i", repid)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/bugraporsil <RaporID>");
+    if(!Iter_Contains(Raporlar, repid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu id ye ait bir rapor bulunmamakta.");
 
 	Iter_Remove(Raporlar, repid);
 	mysql_format(Owsla, str, sizeof(str), "DELETE FROM `raporlar` WHERE `RaporID` = '%d'", repid);
 	mysql_tquery(Owsla, str);
 
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%d idli bug raporu sildiniz.", repid);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%d idli bug raporu sildiniz.", repid);
 	Bilgi(playerid, str);
     return 1;
 }
@@ -2205,16 +2205,16 @@ CMD:bugraporsil(playerid, params[])
 flags:setcolor(CMD_ADMIN);
 CMD:setcolor(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 8 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 8 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, hexx;
-	if(sscanf(params, "ux", id, hexx)) return Kullanim(playerid, "Kullanim » {FFFFFF}/setcolor <Id> <Hex>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "ux", id, hexx)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/setcolor <Id> <Hex>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[156];
 	SetPlayerColor(id, hexx);
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s(%d) adlý oyuncunun nick rengini deðiþtirdiniz.", PlayerInfo[id][Name], id);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s(%d) adlÄ± oyuncunun nick rengini deÄŸiÅŸtirdiniz.", PlayerInfo[id][Name], id);
   	Bilgi(playerid, str);
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s(%d) adlý yönetici nick renginizi deðiþtirdi.", PlayerInfo[playerid][Name], playerid);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s(%d) adlÄ± yÃ¶netici nick renginizi deÄŸiÅŸtirdi.", PlayerInfo[playerid][Name], playerid);
   	Bilgi(id, str);
 	return 1;
 }
@@ -2222,15 +2222,15 @@ CMD:setcolor(playerid, params[])
 flags:unban(CMD_ADMIN);
 CMD:unban(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 8 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
-    ShowPlayerDialog(playerid, DIALOG_UNBAN, DIALOG_STYLE_LIST, ""ANA_RENK"Owsla Gaming - {FFFFFF}Unban", "{FFFFFF}SBan Açma\nNBan Açma\nIP Ban Açma", "Seç", "Kapat");
+    if(PlayerInfo[playerid][Admin] < 8 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
+    ShowPlayerDialog(playerid, DIALOG_UNBAN, DIALOG_STYLE_LIST, ""ANA_RENK"Owsla Gaming - {FFFFFF}Unban", "{FFFFFF}SBan AÃ§ma\nNBan AÃ§ma\nIP Ban AÃ§ma", "SeÃ§", "Kapat");
 	return 1;
 }
 // Level 7
 flags:rac(CMD_ADMIN);
 CMD:rac(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	for(new i = 1; i <= MAX_VEHICLES; i++)
 	{
 		if(IsVehicleEmpty(i)) SetVehicleToRespawn(i);
@@ -2245,17 +2245,17 @@ flags:offban(CMD_ADMIN);
 CMD:offban(playerid, params[])
 {
 	new isim[24], sebep[56], gun;
-	if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
-	if(sscanf(params, "s[24]is[56]", isim, gun, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/offban <Nick> <Gün> <Sebep>");
-    if(CheckNick(isim) == 0) return Hata(playerid, "Hata » {FFFFFF}Böyle bir oyuncu yok.");
-	if(gun < 1) return Hata(playerid, "Hata » {FFFFFF}En az 1 gün girebilirsiniz!");
+	if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
+	if(sscanf(params, "s[24]is[56]", isim, gun, sebep)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/offban <Nick> <GÃ¼n> <Sebep>");
+    if(CheckNick(isim) == 0) return Hata(playerid, "Hata Â» {FFFFFF}BÃ¶yle bir oyuncu yok.");
+	if(gun < 1) return Hata(playerid, "Hata Â» {FFFFFF}En az 1 gÃ¼n girebilirsiniz!");
 	
 	new str[256];
     mysql_format(Owsla, str, sizeof(str),"SELECT * FROM `bans` WHERE `kullanici` = '%e'", isim);
     new Cache:VeriCek = mysql_query(Owsla, str);
     if(cache_num_rows())
     {
-        Hata(playerid, "Hata » {FFFFFF}Bu oyuncu zaten banlý!");
+        Hata(playerid, "Hata Â» {FFFFFF}Bu oyuncu zaten banlÄ±!");
     }else
 	{
 		format(str, sizeof(str), "~r~~h~~h~[Off-Ban] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~) (~p~~h~%d gun~w~~h~~h~)", PlayerInfo[playerid][Name], isim, sebep, gun);
@@ -2270,11 +2270,11 @@ CMD:offban(playerid, params[])
 flags:rban(CMD_ADMIN);
 CMD:rban(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 7 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, sebep[56];
-	if(sscanf(params, "us[56]", id, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/rban <Nick/ID> <Sebep>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "us[56]", id, sebep)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/rban <Nick/ID> <Sebep>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
     RBanReason(id, sebep, PlayerInfo[playerid][Name]);
 	return 1;
 }
@@ -2282,18 +2282,18 @@ CMD:rban(playerid, params[])
 flags:god(CMD_ADMIN);
 CMD:god(playerid)
 {
-    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	switch(PlayerInfo[playerid][God])
 	{
 		case false:
 		{
 		    PlayerInfo[playerid][God] = true;
-		    Bilgi(playerid, "Bilgi » {FFFFFF}GOD özelliðiniz devrede.");
+		    Bilgi(playerid, "Bilgi Â» {FFFFFF}GOD Ã¶zelliÄŸiniz devrede.");
 		}
 		case true:
 		{
 		    PlayerInfo[playerid][God] = false;
-		    Bilgi(playerid, "Bilgi » {FFFFFF}GOD özelliðiniz devre dýþý.");
+		    Bilgi(playerid, "Bilgi Â» {FFFFFF}GOD Ã¶zelliÄŸiniz devre dÄ±ÅŸÄ±.");
 		}
 	}
 	return 1;
@@ -2302,11 +2302,11 @@ CMD:god(playerid)
 flags:nban(CMD_ADMIN);
 CMD:nban(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, sebep[76];
-	if(sscanf(params, "us[76]", id, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/nban <Nick/ID> <Sebep>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "us[76]", id, sebep)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/nban <Nick/ID> <Sebep>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
   	NBanReason(id, sebep, PlayerInfo[playerid][Name]);
 	return 1;
 }
@@ -2314,11 +2314,11 @@ CMD:nban(playerid, params[])
 flags:ban(CMD_ADMIN);
 CMD:ban(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 5 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 5 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, sebep[56], gun;
-	if(sscanf(params, "uis[56]", id, gun, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/ban <Nick/ID> <Gün> <Sebep>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(gun < 1) return Hata(playerid, "Hata » {FFFFFF}En az 1 gün girebilirsiniz!");
+	if(sscanf(params, "uis[56]", id, gun, sebep)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/ban <Nick/ID> <GÃ¼n> <Sebep>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(gun < 1) return Hata(playerid, "Hata Â» {FFFFFF}En az 1 gÃ¼n girebilirsiniz!");
     SBanReason(id, sebep, PlayerInfo[playerid][Name], gun);
 	return 1;
 }
@@ -2326,12 +2326,12 @@ CMD:ban(playerid, params[])
 flags:akill(CMD_ADMIN);
 CMD:akill(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 5 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 5 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, reason[56];
-    if(sscanf(params, "ds[56]", id, reason)) return Kullanim(playerid, "Kullanim » {FFFFFF}/akill <Nick/ID> <Sebep>");
-    if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-    if(playerid == id) return Hata(playerid, "Hata » {FFFFFF}Kendinizi öldüremezsiniz!");
-    if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+    if(sscanf(params, "ds[56]", id, reason)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/akill <Nick/ID> <Sebep>");
+    if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+    if(playerid == id) return Hata(playerid, "Hata Â» {FFFFFF}Kendinizi Ã¶ldÃ¼remezsiniz!");
+    if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[256];
 	format(str, sizeof(str), "~w~~h~~h~[Akill] ~r~~h~%s ~w~~h~~h~>> ~r~~h~%s ~w~~h~~h~(~r~~h~%s~w~~h~~h~)", PlayerInfo[playerid][Name], PlayerInfo[id][Name], reason);
     TextMesaji(TurkceKarakter(str));
@@ -2342,11 +2342,11 @@ CMD:akill(playerid, params[])
 flags:kick(CMD_ADMIN);
 CMD:kick(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 6 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id, sebep[76];
-	if(sscanf(params, "us[76]", id, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/kick <Nick/ID> <Sebep>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "us[76]", id, sebep)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/kick <Nick/ID> <Sebep>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
   	KickReason(id, sebep, PlayerInfo[playerid][Name]);
 	return 1;
 }
@@ -2354,11 +2354,11 @@ CMD:kick(playerid, params[])
 flags:aka(CMD_ADMIN);
 CMD:aka(playerid, params[])
 {
-	if(PlayerInfo[playerid][Admin] < 1 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+	if(PlayerInfo[playerid][Admin] < 1 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new id;
-	if(sscanf(params, "u", id)) return Kullanim(playerid, "Kullanim » {FFFFFF}/aka <Nick/ID>");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata » {FFFFFF}Bu yöneticiye bu komutu kullanamazsýnýz.");
+	if(sscanf(params, "u", id)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/aka <Nick/ID>");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][Admin] < PlayerInfo[id][Admin]) return Hata(playerid, "Hata Â» {FFFFFF}Bu yÃ¶neticiye bu komutu kullanamazsÄ±nÄ±z.");
 	new str[1024], baslik[56];
 	format(baslik, sizeof(baslik), ""ANA_RENK"Owsla Gaming - {FFFFFF}Aka %s", PlayerInfo[id][Name]);
 	format(str, sizeof(str), "%s", GetAka(id));
@@ -2368,9 +2368,9 @@ CMD:aka(playerid, params[])
 flags:acmds(CMD_ADMIN);
 CMD:acmds(playerid, params[])
 {
-    if(PlayerInfo[playerid][Admin] < 1 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata » {FFFFFF}Bu komutu kullanmak için yetkiniz yeterli deðil.");
+    if(PlayerInfo[playerid][Admin] < 1 && !IsPlayerAdmin(playerid)) return Hata(playerid, "Hata Â» {FFFFFF}Bu komutu kullanmak iÃ§in yetkiniz yeterli deÄŸil.");
 	new str[3500];
-	format(str, sizeof(str), ""ANA_RENK"Level\t"ANA_RENK"Komut\t"ANA_RENK"Açýklama\n");
+	format(str, sizeof(str), ""ANA_RENK"Level\t"ANA_RENK"Komut\t"ANA_RENK"AÃ§Ä±klama\n");
 	for(new i; i < sizeof(AdminKomutlari); i++)
 	{
 		if(PlayerInfo[playerid][Admin] >= AdminKomutlari[i][cLevel])
@@ -2378,23 +2378,23 @@ CMD:acmds(playerid, params[])
 			format(str, sizeof(str), "%s"ANA_RENK"%i\t{FFFFFF}%s\t{FFFFFF}%s\n", str, AdminKomutlari[i][cLevel], AdminKomutlari[i][cIsim], AdminKomutlari[i][cAciklama]);
 		}
 	}
-	ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Admin Komutlarý", str, "Tamam", "");
+	ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Admin KomutlarÄ±", str, "Tamam", "");
 	return 1;
 }
-// Oyuncu komutlarý
+// Oyuncu komutlarÄ±
 flags:pm(CMD_ADMIN);
 CMD:pm(playerid, params[])
 {
 	new id, pm[128];
-	if(sscanf(params, "us[128]", id, pm)) return Kullanim(playerid, "Kullanim » {FFFFFF}/pm <Player/ID> <Mesaj>");
-	if(id == INVALID_PLAYER_ID) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(PlayerInfo[playerid][PMengel] == false) return Hata(playerid, "Hata » {FFFFFF}Özel mesaj alýmýnýz kapalý, /Ayarlar komutunu kullanarak açabilirsiniz.");
-	if(PlayerInfo[id][PMengel] == false) return Hata(playerid, "Hata » {FFFFFF}Özel mesaj alýmý kapalý.");
-	if(id == playerid) return Hata(playerid, "Hata » {FFFFFF}Kendinize mesaj atamazsýnýz.");
+	if(sscanf(params, "us[128]", id, pm)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/pm <Player/ID> <Mesaj>");
+	if(id == INVALID_PLAYER_ID) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(PlayerInfo[playerid][PMengel] == false) return Hata(playerid, "Hata Â» {FFFFFF}Ã–zel mesaj alÄ±mÄ±nÄ±z kapalÄ±, /Ayarlar komutunu kullanarak aÃ§abilirsiniz.");
+	if(PlayerInfo[id][PMengel] == false) return Hata(playerid, "Hata Â» {FFFFFF}Ã–zel mesaj alÄ±mÄ± kapalÄ±.");
+	if(id == playerid) return Hata(playerid, "Hata Â» {FFFFFF}Kendinize mesaj atamazsÄ±nÄ±z.");
     new str[256];
-	format(str, sizeof(str), "» PM Gönderildi %s(%d) : {FFFFFF}%s", PlayerInfo[id][Name], id, pm);
+	format(str, sizeof(str), "Â» PM GÃ¶nderildi %s(%d) : {FFFFFF}%s", PlayerInfo[id][Name], id, pm);
 	SendClientMessage(playerid, GetPlayerColor(playerid), str);
-	format(str, sizeof(str), "» PM Geldi %s(%d) : {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, pm);
+	format(str, sizeof(str), "Â» PM Geldi %s(%d) : {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, pm);
 	SendClientMessage(id, GetPlayerColor(id), str);
 	PlayerPlaySound(id, 1085, 0.0, 0.0, 10.0);
     PlayerInfo[playerid][LastPM] = id;
@@ -2405,15 +2405,15 @@ flags:re(CMD_ADMIN);
 CMD:re(playerid, params[])
 {
 	new id = PlayerInfo[playerid][LastPM];
-	if(id == INVALID_PLAYER_ID) return Hata(playerid, "Hata » {FFFFFF}Daha önce özel mesaj almamýþsýnýz.");
-	if(PlayerInfo[playerid][PMengel] == false) return Hata(playerid, "Hata » {FFFFFF}Özel mesaj alýmýnýz kapalý, /Ayarlar komutunu kullanarak açabilirsiniz.");
-	if(PlayerInfo[id][PMengel] == false) return Hata(playerid, "Hata » {FFFFFF}Özel mesaj alýmý kapalý.");
-	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata » {FFFFFF}Oyuncu oyunda deðil.");
-	if(isnull(params)) return Kullanim(playerid, "Kullanim » {FFFFFF}/re <Mesaj>");
+	if(id == INVALID_PLAYER_ID) return Hata(playerid, "Hata Â» {FFFFFF}Daha Ã¶nce Ã¶zel mesaj almamÄ±ÅŸsÄ±nÄ±z.");
+	if(PlayerInfo[playerid][PMengel] == false) return Hata(playerid, "Hata Â» {FFFFFF}Ã–zel mesaj alÄ±mÄ±nÄ±z kapalÄ±, /Ayarlar komutunu kullanarak aÃ§abilirsiniz.");
+	if(PlayerInfo[id][PMengel] == false) return Hata(playerid, "Hata Â» {FFFFFF}Ã–zel mesaj alÄ±mÄ± kapalÄ±.");
+	if(!IsPlayerConnected(id)) return Hata(playerid, "Hata Â» {FFFFFF}Oyuncu oyunda deÄŸil.");
+	if(isnull(params)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/re <Mesaj>");
     new str[40+128];
-	format(str, sizeof(str), "» PM Gönderildi %s(%d) : {FFFFFF}%s", PlayerInfo[id][Name], id, params);
+	format(str, sizeof(str), "Â» PM GÃ¶nderildi %s(%d) : {FFFFFF}%s", PlayerInfo[id][Name], id, params);
 	SendClientMessage(playerid, GetPlayerColor(playerid), str);
-	format(str, sizeof(str), "» PM Geldi %s(%d) : {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, params);
+	format(str, sizeof(str), "Â» PM Geldi %s(%d) : {FFFFFF}%s", PlayerInfo[playerid][Name], playerid, params);
 	SendClientMessage(id, GetPlayerColor(id), str);
 	PlayerPlaySound(id, 1085, 0.0, 0.0, 10.0);
 	PlayerInfo[playerid][LastPM] = id;
@@ -2428,11 +2428,11 @@ CMD:ayarlar(playerid)
 CMD:cezalarim(playerid)
 {
 	new str[512];
-	format(str, sizeof(str), "{FFFFFF}Bu hesapta almýþ olduðunuz cezalarin sayýsý aþaðýda yazmaktadýr.\n\n\
-							  \t{FFFFFF}Uyarý sayýsý: "ANA_RENK"%d\n\
-							  \t{FFFFFF}Kick sayýsý: "ANA_RENK"%d\n\
-							  \t{FFFFFF}Ban sayýsý: "ANA_RENK"%d", PlayerInfo[playerid][WarnCount], PlayerInfo[playerid][KickCount], PlayerInfo[playerid][BanCount]);
-    ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Online Yöneticiler", str, "Tamam", "");
+	format(str, sizeof(str), "{FFFFFF}Bu hesapta almÄ±ÅŸ olduÄŸunuz cezalarin sayÄ±sÄ± aÅŸaÄŸÄ±da yazmaktadÄ±r.\n\n\
+							  \t{FFFFFF}UyarÄ± sayÄ±sÄ±: "ANA_RENK"%d\n\
+							  \t{FFFFFF}Kick sayÄ±sÄ±: "ANA_RENK"%d\n\
+							  \t{FFFFFF}Ban sayÄ±sÄ±: "ANA_RENK"%d", PlayerInfo[playerid][WarnCount], PlayerInfo[playerid][KickCount], PlayerInfo[playerid][BanCount]);
+    ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Cezalarim", str, "Tamam", "");
 	return 1;
 }
 CMD:basarimlar(playerid)
@@ -2441,18 +2441,18 @@ CMD:basarimlar(playerid)
 	format(str, sizeof(str), ""ANA_RENK"#\t"ANA_RENK"Basari\t"ANA_RENK"Kosul\t"ANA_RENK"Durum\n");
 	for(new m; m < sizeof(MedalInfo); m++)
 	{
-		format(str, sizeof(str), "%s"ANA_RENK"%d\t{FFFFFF}%s\t%s\t%s\n", str, m+1, MedalInfo[m][mIsim], MedalInfo[m][mAciklama], (MyMedals[playerid][m] == 1) ? ("{66FF66}•••") : ("{FF6666}•••"));
+		format(str, sizeof(str), "%s"ANA_RENK"%d\t{FFFFFF}%s\t%s\t%s\n", str, m+1, MedalInfo[m][mIsim], MedalInfo[m][mAciklama], (MyMedals[playerid][m] == 1) ? ("{66FF66}Â•Â•Â•") : ("{FF6666}Â•Â•Â•"));
 	}
-	format(str2, sizeof(str2), ""ANA_RENK"Owsla Gaming - {FFFFFF}Baþarýmlar (%d/%d)", GetPlayerMedalsCount(playerid), sizeof(MedalInfo));
+	format(str2, sizeof(str2), ""ANA_RENK"Owsla Gaming - {FFFFFF}BaÅŸarÄ±mlar (%d/%d)", GetPlayerMedalsCount(playerid), sizeof(MedalInfo));
 	ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_TABLIST_HEADERS, str2, str, "Tamam", "");
 	return 1;
 }
 alias:veh("v", "car");
 CMD:veh(playerid, params[])
 {
-	if(PlayerInfo[playerid][SpawnBolgesinde] == true) return Hata(playerid, "Hata » {FFFFFF}Spawn bolgesinde arac indiremezsin.");
+	if(PlayerInfo[playerid][SpawnBolgesinde] == true) return Hata(playerid, "Hata Â» {FFFFFF}Spawn bolgesinde arac indiremezsin.");
 	new vehicle[32], aracid, Float:X, Float:Y, Float:Z, Float:Angle;
-	if(sscanf(params, "s[32]", vehicle)) return Kullanim(playerid, "Kullanim » {FFFFFF}/veh <Arac ID/Isim>");
+	if(sscanf(params, "s[32]", vehicle)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/veh <Arac ID/Isim>");
 	if(!IsNumeric(vehicle))
 	{
  		aracid = AracIsimiGiris(vehicle);
@@ -2460,8 +2460,8 @@ CMD:veh(playerid, params[])
 	{
 		aracid = strval(vehicle);
 	}
-	if(aracid < 400 || aracid > 611) return Hata(playerid, "Hata » {FFFFFF}Böyle bir araç yok.");
-	if((aracid == 520 || aracid == 432 || aracid == 425 || aracid == 447 || aracid == 464 || aracid == 465) && PlayerInfo[playerid][Admin] < 9) return Hata(playerid, "Hata » {FFFFFF}Bu aracý alamazsýnýz.");
+	if(aracid < 400 || aracid > 611) return Hata(playerid, "Hata Â» {FFFFFF}BÃ¶yle bir araÃ§ yok.");
+	if((aracid == 520 || aracid == 432 || aracid == 425 || aracid == 447 || aracid == 464 || aracid == 465) && PlayerInfo[playerid][Admin] < 9) return Hata(playerid, "Hata Â» {FFFFFF}Bu aracÄ± alamazsÄ±nÄ±z.");
     if(PlayerInfo[playerid][Araba] == true)
 	{
 		DestroyVehicle(PlayerInfo[playerid][Arabam]);
@@ -2524,9 +2524,9 @@ CMD:admins(playerid)
     strcat(str2, str);
     format(str, sizeof(str), "\t\t\t\t"ANA_RENK"DJ: {FFFFFF}%d\n", djler);
     strcat(str2, str);
-    format(str, sizeof(str), "\t\t\t\t"ANA_RENK"Bütün yetkililer: {FFFFFF}%d\n", adminler+animler+djler);
+    format(str, sizeof(str), "\t\t\t\t"ANA_RENK"BÃ¼tÃ¼n yetkililer: {FFFFFF}%d\n", adminler+animler+djler);
     strcat(str2, str);
-    ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Online Yöneticiler", str2, "Tamam", "");
+    ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Online YÃ¶neticiler", str2, "Tamam", "");
 	return 1;
 }
 
@@ -2550,11 +2550,11 @@ CMD:vips(playerid)
 CMD:bugrapor(playerid, params[])
 {
     new raporr[125], query[628], it = Iter_Free(Raporlar);
-    if(sscanf(params, "s[125]", raporr)) return Kullanim(playerid, "Kullanim » {FFFFFF}/bugrapor <Rapor>");
-    if(it == -1) return Hata(playerid, "Hata » {FFFFFF}Bug rapor sýnýrý þuan dolu, baþka bir zaman deneyin.");
+    if(sscanf(params, "s[125]", raporr)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/bugrapor <Rapor>");
+    if(it == -1) return Hata(playerid, "Hata Â» {FFFFFF}Bug rapor sÄ±nÄ±rÄ± ÅŸuan dolu, baÅŸka bir zaman deneyin.");
 
-    foreach(new i: Player) if(PlayerInfo[i][Admin] >= 9 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, "Bug Rapor » {FFFFFF}Yeni bir bug rapor var! /Bugraporlar");
-    Bilgi(playerid, "Bilgi » {FFFFFF}Bug raporunuz online adminlere iletildi.");
+    foreach(new i: Player) if(PlayerInfo[i][Admin] >= 9 || IsPlayerAdmin(i)) SendClientMessage(i, 0xAFAFAFFF, "Bug Rapor Â» {FFFFFF}Yeni bir bug rapor var! /Bugraporlar");
+    Bilgi(playerid, "Bilgi Â» {FFFFFF}Bug raporunuz online adminlere iletildi.");
     Iter_Add(Raporlar, it);
 	mysql_format(Owsla, query, sizeof(query), "INSERT INTO `raporlar` (`RaporID`, `Raporlayan`, `RaporTarih`, `Rapor`) VALUES ('%d', '%e', '%d', '%e')", it, PlayerInfo[playerid][Name], gettime(), raporr);
     mysql_tquery(Owsla, query);
@@ -2574,21 +2574,21 @@ CMD:objects(playerid)
 }
 CMD:dmler(playerid)
 {
-	if(Iter_Count(Dmler) == 0) return Hata(playerid, "Hata » {FFFFFF}Þuanda oluþturulmuþ dm bulunmamakta. Yöneticiler ile irtibata geçiniz.");
+	if(Iter_Count(Dmler) == 0) return Hata(playerid, "Hata Â» {FFFFFF}Åžuanda oluÅŸturulmuÅŸ dm bulunmamakta. YÃ¶neticiler ile irtibata geÃ§iniz.");
 	new str[1024];
 	str = ""ANA_RENK"Dm Ismi\t"ANA_RENK"Silahlar\n";
 	foreach(new i: Dmler)
 	{
 		format(str, sizeof(str), "%s{FFFFFF}%s\t"ANA_RENK"%s {FFFFFF}| "ANA_RENK"%s {FFFFFF}| "ANA_RENK"%s\n", str, DmInfo[i][dName], GetWeaponNameEx(DmInfo[i][dWeap1]), GetWeaponNameEx(DmInfo[i][dWeap2]), GetWeaponNameEx(DmInfo[i][dWeap3]));
 	}
-	ShowPlayerDialog(playerid, DIALOG_DMS, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Deathmatch Listesi", str, "Katýl", "Iptal");
+	ShowPlayerDialog(playerid, DIALOG_DMS, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Deathmatch Listesi", str, "KatÄ±l", "Iptal");
 	return 1;
 }
 CMD:dm(playerid, params[])
 {
 	new id;
-	if(sscanf(params, "i", id)) return Kullanim(playerid, "Kullanim » {FFFFFF}/dm <ID>");
-    if(!Iter_Contains(Dmler, id)) return Hata(playerid, "Hata » {FFFFFF}Geçersiz dm idsi. /Dmler");
+	if(sscanf(params, "i", id)) return Kullanim(playerid, "Kullanim Â» {FFFFFF}/dm <ID>");
+    if(!Iter_Contains(Dmler, id)) return Hata(playerid, "Hata Â» {FFFFFF}GeÃ§ersiz dm idsi. /Dmler");
 	ResetPlayerWeapons(playerid);
 	SetPlayerPos(playerid, DmInfo[id][dPos][0], DmInfo[id][dPos][1], DmInfo[id][dPos][2]);
 	SetPlayerInterior(playerid, DmInfo[id][dInt]);
@@ -2601,14 +2601,14 @@ CMD:dm(playerid, params[])
     PlayerInfo[playerid][Dmde] = true;
     PlayerInfo[playerid][DmID] = id;
 	new str[128];
-	format(str, sizeof(str), "Bilgi » {FFFFFF}%s isimli dmye katýldýnýz!", DmInfo[id][dName]);
+	format(str, sizeof(str), "Bilgi Â» {FFFFFF}%s isimli dmye katÄ±ldÄ±nÄ±z!", DmInfo[id][dName]);
 	Bilgi(playerid, str);
 	return 1;
 }
 flags:dmcik(CMD_ADMIN);
 CMD:dmcik(playerid)
 {
-	if(PlayerInfo[playerid][Dmde] == false) return Hata(playerid, "Hata » {FFFFFF}Zaten herhangi dm de deðilsiniz.");
+	if(PlayerInfo[playerid][Dmde] == false) return Hata(playerid, "Hata Â» {FFFFFF}Zaten herhangi dm de deÄŸilsiniz.");
     PlayerInfo[playerid][Dmde] = false;
     PlayerInfo[playerid][DmID] = -1;
     SpawnPlayer(playerid);
@@ -2633,7 +2633,7 @@ CMD:updates(playerid, params[])
         }
         ShowPlayerDialog(playerid, DIALOG_UPDATES, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Updates", dialog, "Ileri", "Geri");
     }
-    else Hata(playerid, "Hata » {FFFFFF}Þuanda güncelleme bulunmamakta.");
+    else Hata(playerid, "Hata Â» {FFFFFF}Åžuanda gÃ¼ncelleme bulunmamakta.");
     cache_delete(VeriCek);
     return 1;
 }
@@ -2647,34 +2647,34 @@ function OnPlayerDataLoaded(playerid, race_check)
 		cache_get_value(0, "Salt", PlayerInfo[playerid][Salt], 17);
 		PlayerInfo[playerid][Cache_ID] = cache_save();
 		
-   		format(str, sizeof(str), ""ANA_RENK"Owsla Gaming'e {FFFFFF}Hoþgeldiniz!\n\
-									    {FFFFFF}Sunucu veritabanýnda "ANA_RENK"%s {FFFFFF}adýnda bir kullanýcý bulunuyor.\n\
-									    {FFFFFF}Giriþ yapmak için "ANA_RENK"45 saniye {FFFFFF}içinde aþaðýdaki kutucuða þifrenizi giriniz.", PlayerInfo[playerid][Name]);
+   		format(str, sizeof(str), ""ANA_RENK"Owsla Gaming'e {FFFFFF}HoÅŸgeldiniz!\n\
+									    {FFFFFF}Sunucu veritabanÄ±nda "ANA_RENK"%s {FFFFFF}adÄ±nda bir kullanÄ±cÄ± bulunuyor.\n\
+									    {FFFFFF}GiriÅŸ yapmak iÃ§in "ANA_RENK"45 saniye {FFFFFF}iÃ§inde aÅŸaÄŸÄ±daki kutucuÄŸa ÅŸifrenizi giriniz.", PlayerInfo[playerid][Name]);
 		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}Giris", str, "Giris", "Cikis");
 		PlayerInfo[playerid][LoginTimer] = SetTimerEx("OnLoginTimeout", 45*1000, false, "d", playerid);
 	}else
 	{
-		format(str, sizeof(str), ""ANA_RENK"Owsla Gaming'e {FFFFFF}Hoþgeldiniz!\n\
-			                   			{FFFFFF}Sunucu veritabanýnda "ANA_RENK"%s {FFFFFF}adýnda bir kullanýcý bulunmuyor.\n\
-							   			{FFFFFF}Kayýt olmak için aþaðýdaki kutucuða þifrenizi giriniz.", PlayerInfo[playerid][Name]);
-		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}Kayýt Ol", str, "Kayit", "Cikis");
+		format(str, sizeof(str), ""ANA_RENK"Owsla Gaming'e {FFFFFF}HoÅŸgeldiniz!\n\
+			                   			{FFFFFF}Sunucu veritabanÄ±nda "ANA_RENK"%s {FFFFFF}adÄ±nda bir kullanÄ±cÄ± bulunmuyor.\n\
+							   			{FFFFFF}KayÄ±t olmak iÃ§in aÅŸaÄŸÄ±daki kutucuÄŸa ÅŸifrenizi giriniz.", PlayerInfo[playerid][Name]);
+		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, ""ANA_RENK"Owsla Gaming - {FFFFFF}KayÄ±t Ol", str, "Kayit", "Cikis");
 	}
 	return 1;
 }
 function OnLoginTimeout(playerid)
 {
 	PlayerInfo[playerid][LoginTimer] = 0;
-    KickReason(playerid, "Zaman Aþýmý", "Sistem");
+    KickReason(playerid, "Zaman AÅŸÄ±mÄ±", "Sistem");
 	return 1;
 }
 function OnPlayerRegister(playerid)
 {
 	PlayerInfo[playerid][UserID] = cache_insert_id();
-	Bilgi(playerid, "Bilgi » {FFFFFF}Yeni bir hesap olusturdunuz. Iyi eglenceler!");
+	Bilgi(playerid, "Bilgi Â» {FFFFFF}Yeni bir hesap olusturdunuz. Iyi eglenceler!");
 	PlayerInfo[playerid][IsLoggedIn] = true;
 	GivePlayerCash(playerid, 5000), GivePlayerExp(playerid, 5);
 	new str[128];
-	format(str, sizeof(str), "Owsla Gaming » {FFFFFF}%s servera kayýt olarak aramýza katýldý. Kayýtlý kullanýcý sayýsý %d", PlayerInfo[playerid][Name], PlayerInfo[playerid][UserID]);
+	format(str, sizeof(str), "Owsla Gaming Â» {FFFFFF}%s servera kayÄ±t olarak aramÄ±za katÄ±ldÄ±. KayÄ±tlÄ± kullanÄ±cÄ± sayÄ±sÄ± %d", PlayerInfo[playerid][Name], PlayerInfo[playerid][UserID]);
 	SendClientMessageToAll(0xFF6600FF, str);
 	return 1;
 }
@@ -2767,10 +2767,10 @@ stock KickReason(playerid, reason[], admin[])
 	format(str, sizeof(str), "~r~~h~~h~[Kick] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~)", admin, PlayerInfo[playerid][Name], reason);
 	TextMesaji(TurkceKarakter(str));
 	for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    format(str, sizeof(str), "{FFFFFF}» Kickleyen: "ANA_RENK"%s\n\
-							    {FFFFFF}» Sebep: "ANA_RENK"%s\n\
-							    {FFFFFF}» Saat: "ANA_RENK"%02d:%02d:%02d\n\
-							    {FFFFFF}» Tarih: "ANA_RENK"%d/%d/%d", admin, reason, h, m, s, g, a, y);
+    format(str, sizeof(str), "{FFFFFF}Â» Kickleyen: "ANA_RENK"%s\n\
+							    {FFFFFF}Â» Sebep: "ANA_RENK"%s\n\
+							    {FFFFFF}Â» Saat: "ANA_RENK"%02d:%02d:%02d\n\
+							    {FFFFFF}Â» Tarih: "ANA_RENK"%d/%d/%d", admin, reason, h, m, s, g, a, y);
     ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Kick", str, "Tamam", "");
     PlayerInfo[playerid][KickCount]++;
 	KickPlayer(playerid);
@@ -2783,10 +2783,10 @@ stock BanReason(playerid, reason[], admin[])
 	format(str, sizeof(str), "~r~~h~~h~[Ban] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~)", admin, PlayerInfo[playerid][Name], reason);
 	TextMesaji(TurkceKarakter(str));
 	for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    format(str, sizeof(str),   "{FFFFFF}» Banlayan: "ANA_RENK"%s\n\
-							    {FFFFFF}» Sebep: "ANA_RENK"%s\n\
-							    {FFFFFF}» Saat: "ANA_RENK"%02d:%02d:%02d\n\
-							    {FFFFFF}» Tarih: "ANA_RENK"%d/%d/%d", admin, reason, h, m, s, g, a, y);
+    format(str, sizeof(str),   "{FFFFFF}Â» Banlayan: "ANA_RENK"%s\n\
+							    {FFFFFF}Â» Sebep: "ANA_RENK"%s\n\
+							    {FFFFFF}Â» Saat: "ANA_RENK"%02d:%02d:%02d\n\
+							    {FFFFFF}Â» Tarih: "ANA_RENK"%d/%d/%d", admin, reason, h, m, s, g, a, y);
     ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Ban", str, "Tamam", "");
     PlayerInfo[playerid][BanCount]++;
 	BanPlayer(playerid);
@@ -2802,10 +2802,10 @@ stock SBanReason(playerid, reason[], admin[], gun)
 	mysql_format(Owsla, str, sizeof(str),"INSERT INTO `bans` (kullanici, sebep, admin, bitis, ip, durum) VALUES ('%e', '%e', '%e', '%i', '%s', '1')", PlayerInfo[playerid][Name], reason, admin, gettime()+(gun*86400), PlayerInfo[playerid][IP]);
 	mysql_tquery(Owsla, str);
 
-	format(str, sizeof(str), "{FFFFFF}Hesabýnýz yasaklandý "ANA_RENK"%s\n\n\
-							  		\t{FFFFFF}» Banlayan: "ANA_RENK"%s\n\
-						      		\t{FFFFFF}» Sebep: "ANA_RENK"%s\n\
-	                          		\t{FFFFFF}» Açýlacaðý tarih: "ANA_RENK"%s", PlayerInfo[playerid][Name], admin, reason, ReturnDate(gettime()+gun*86400));
+	format(str, sizeof(str), "{FFFFFF}HesabÄ±nÄ±z yasaklandÄ± "ANA_RENK"%s\n\n\
+							  		\t{FFFFFF}Â» Banlayan: "ANA_RENK"%s\n\
+						      		\t{FFFFFF}Â» Sebep: "ANA_RENK"%s\n\
+	                          		\t{FFFFFF}Â» AÃ§Ä±lacaÄŸÄ± tarih: "ANA_RENK"%s", PlayerInfo[playerid][Name], admin, reason, ReturnDate(gettime()+gun*86400));
 	ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}Ban", str, "Tamam", "");
 	PlayerInfo[playerid][BanCount]++;
 	BanPlayer(playerid);
@@ -2818,11 +2818,11 @@ stock NBanReason(playerid, reason[], admin[])
 	format(str, sizeof(str), "~r~~h~~h~[N-Ban] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~)", admin, PlayerInfo[playerid][Name], reason);
 	TextMesaji(TurkceKarakter(str));
 	for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    format(str, sizeof(str), "{FFFFFF}Hesabýnýz yasaklandý "ANA_RENK"%s\n\n\
-									\t{FFFFFF}» NBanlayan: "ANA_RENK"%s\n\
-			    					\t{FFFFFF}» Sebep: "ANA_RENK"%s\n\
-							    	\t{FFFFFF}» Saat: "ANA_RENK"%02d:%02d:%02d\n\
-							    	\t{FFFFFF}» Tarih: "ANA_RENK"%d/%d/%d", PlayerInfo[playerid][Name], admin, reason, h, m, s, g, a, y);
+    format(str, sizeof(str), "{FFFFFF}HesabÄ±nÄ±z yasaklandÄ± "ANA_RENK"%s\n\n\
+									\t{FFFFFF}Â» NBanlayan: "ANA_RENK"%s\n\
+			    					\t{FFFFFF}Â» Sebep: "ANA_RENK"%s\n\
+							    	\t{FFFFFF}Â» Saat: "ANA_RENK"%02d:%02d:%02d\n\
+							    	\t{FFFFFF}Â» Tarih: "ANA_RENK"%d/%d/%d", PlayerInfo[playerid][Name], admin, reason, h, m, s, g, a, y);
     ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}N-Ban", str, "Tamam", "");
     PlayerInfo[playerid][Banned] = 1;
     PlayerInfo[playerid][BanCount]++;
@@ -2836,11 +2836,11 @@ stock RBanReason(playerid, reason[], admin[])
 	format(str, sizeof(str), "~r~~h~~h~[R-Ban] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~)", admin, PlayerInfo[playerid][Name], reason);
 	TextMesaji(TurkceKarakter(str));
 	for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    format(str, sizeof(str), "{FFFFFF}Hesabýnýz yasaklandý "ANA_RENK"%s\n\n\
-									\t{FFFFFF}» RBanlayan: "ANA_RENK"%s\n\
-			    					\t{FFFFFF}» Sebep: "ANA_RENK"%s\n\
-							    	\t{FFFFFF}» Saat: "ANA_RENK"%02d:%02d:%02d\n\
-							    	\t{FFFFFF}» Tarih: "ANA_RENK"%d/%d/%d", PlayerInfo[playerid][Name], admin, reason, h, m, s, g, a, y);
+    format(str, sizeof(str), "{FFFFFF}HesabÄ±nÄ±z yasaklandÄ± "ANA_RENK"%s\n\n\
+									\t{FFFFFF}Â» RBanlayan: "ANA_RENK"%s\n\
+			    					\t{FFFFFF}Â» Sebep: "ANA_RENK"%s\n\
+							    	\t{FFFFFF}Â» Saat: "ANA_RENK"%02d:%02d:%02d\n\
+							    	\t{FFFFFF}Â» Tarih: "ANA_RENK"%d/%d/%d", PlayerInfo[playerid][Name], admin, reason, h, m, s, g, a, y);
     ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}R-Ban", str, "Tamam", "");
 
 	format(str, sizeof(str), "banip %s", PlayerRangeIP(playerid));
@@ -2904,11 +2904,11 @@ function IslemUygula(playerid, islem)
 stock SpawnEkle(playerid)
 {
 	new i = Iter_Free(Spawnlar), str[256];
-	if(i == -1) return Hata(playerid, "Hata » {FFFFFF}Spawn sýnýrý dolmuþ.");
+	if(i == -1) return Hata(playerid, "Hata Â» {FFFFFF}Spawn sÄ±nÄ±rÄ± dolmuÅŸ.");
  	GetPlayerPos(playerid, SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ]), GetPlayerFacingAngle(playerid, SpawnInfo[i][spawnA]);
    	SpawnInfo[i][spawnPickup] = CreateDynamicPickup(1239, 1, SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ], 0, 0, -1);
 
-	format(str, sizeof(str), "::[ "ANA_RENK"Spawn Bölgesi{C0C0C0} ]::\n"ANA_RENK"%s\n{C0C0C0}Zýrh-Can'ýnýzý "ANA_RENK"H tusu {C0C0C0}ile ücretsiz fulleyebilirsiniz.\n{C0C0C0}Spawn silahlarýný deðiþtirmek için "ANA_RENK"/Spawnsilahlari {C0C0C0}komutunu kullanabilirsiniz.", GetZoneName(SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ]));
+	format(str, sizeof(str), "::[ "ANA_RENK"Spawn BÃ¶lgesi{C0C0C0} ]::\n"ANA_RENK"%s\n{C0C0C0}ZÄ±rh-Can'Ä±nÄ±zÄ± "ANA_RENK"H tusu {C0C0C0}ile Ã¼cretsiz fulleyebilirsiniz.\n{C0C0C0}Spawn silahlarÄ±nÄ± deÄŸiÅŸtirmek iÃ§in "ANA_RENK"/Spawnsilahlari {C0C0C0}komutunu kullanabilirsiniz.", GetZoneName(SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ]));
 	SpawnInfo[i][spawn3D] = CreateDynamic3DTextLabel(str, 0xC0C0C0FF, SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ], 50.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 0, 0, -1);
     SpawnInfo[i][spawnIcon] = CreateDynamicMapIcon(SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ], 36, 0, 0, 0, -1, 200.0);
 	SpawnInfo[i][spawnArea] = CreateDynamicRectangle(SpawnInfo[i][spawnX]-45, SpawnInfo[i][spawnY]-45, SpawnInfo[i][spawnX]+45, SpawnInfo[i][spawnY]+45);
@@ -2918,7 +2918,7 @@ stock SpawnEkle(playerid)
 	mysql_format(Owsla, str, sizeof(str), "INSERT INTO `spawnlar` (id, spawnx, spawny, spawnz, spawna) VALUES ('%d', '%f', '%f', '%f', '%f')", i, SpawnInfo[i][spawnX], SpawnInfo[i][spawnY], SpawnInfo[i][spawnZ], SpawnInfo[i][spawnA]);
 	mysql_tquery(Owsla, str);
 
-	Bilgi(playerid, "Bilgi » {FFFFFF}Spawn eklediniz.");
+	Bilgi(playerid, "Bilgi Â» {FFFFFF}Spawn eklediniz.");
 	return 1;
 }
 
@@ -2956,7 +2956,7 @@ function LoadSpawns()
 	    	cache_get_value_name_float(loaded, "spawna", SpawnInfo[x][spawnA]);
 			Iter_Add(Spawnlar, x);
 			SpawnInfo[x][spawnPickup] = CreateDynamicPickup(1239, 1, SpawnInfo[x][spawnX], SpawnInfo[x][spawnY], SpawnInfo[x][spawnZ], 0, 0, -1);
-		   	format(str, sizeof(str), "::[ "ANA_RENK"Spawn Bölgesi{C0C0C0} ]::\n"ANA_RENK"%s\n{C0C0C0}Zýrh-Can'ýnýzý "ANA_RENK"H tusu {C0C0C0}ile ücretsiz fulleyebilirsiniz.\n{C0C0C0}Spawn silahlarýný deðiþtirmek için "ANA_RENK"/Spawnsilahlari {C0C0C0}komutunu kullanabilirsiniz.", GetZoneName(SpawnInfo[x][spawnX], SpawnInfo[x][spawnY], SpawnInfo[x][spawnZ]));
+		   	format(str, sizeof(str), "::[ "ANA_RENK"Spawn BÃ¶lgesi{C0C0C0} ]::\n"ANA_RENK"%s\n{C0C0C0}ZÄ±rh-Can'Ä±nÄ±zÄ± "ANA_RENK"H tusu {C0C0C0}ile Ã¼cretsiz fulleyebilirsiniz.\n{C0C0C0}Spawn silahlarÄ±nÄ± deÄŸiÅŸtirmek iÃ§in "ANA_RENK"/Spawnsilahlari {C0C0C0}komutunu kullanabilirsiniz.", GetZoneName(SpawnInfo[x][spawnX], SpawnInfo[x][spawnY], SpawnInfo[x][spawnZ]));
 			SpawnInfo[x][spawn3D] = CreateDynamic3DTextLabel(str, 0xC0C0C0FF, SpawnInfo[x][spawnX], SpawnInfo[x][spawnY], SpawnInfo[x][spawnZ], 50.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 0, 0, -1);
 			SpawnInfo[x][spawnIcon] = CreateDynamicMapIcon(SpawnInfo[x][spawnX], SpawnInfo[x][spawnY], SpawnInfo[x][spawnZ], 36, 0, -1, -1, -1, 200.0);
             SpawnInfo[x][spawnArea] = CreateDynamicRectangle(SpawnInfo[x][spawnX]-45, SpawnInfo[x][spawnY]-45, SpawnInfo[x][spawnX]+45, SpawnInfo[x][spawnY]+45);
@@ -3019,7 +3019,7 @@ stock ShowSettingsDialog(playerid)
 {
     new str[256], s[64];
     format(str, sizeof(str), ""ANA_RENK"Ayar\t"ANA_RENK"Veri\n");
-	format(s, sizeof(s), ""ANA_RENK"Özel Mesaj\t%s", (PlayerInfo[playerid][PMengel] == false) ? ("{FF6666}Pasif") : ("{66FF66}Aktif"));
+	format(s, sizeof(s), ""ANA_RENK"Ã–zel Mesaj\t%s", (PlayerInfo[playerid][PMengel] == false) ? ("{FF6666}Pasif") : ("{66FF66}Aktif"));
 	strcat(str, s);
 	ShowPlayerDialog(playerid, DIALOG_SETTINGS, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}Ayarlar", str, "Sec", "Geri");
 	return 1;
@@ -3786,10 +3786,10 @@ function UpdateTuyo()
 	switch(SiraEx)
 	{
 	    case 0: format(str, sizeof(str), "~b~~h~~h~#Tuyo 0: ~w~~h~~h~Online yetkilileri gormek icin ~r~~h~~h~/Admins ~w~~h~~h~komutunu kullanabilirsiniz."), SiraEx = 1;
-        case 1: format(str, sizeof(str), "~b~~h~~h~#Tuyo 1: ~w~~h~~h~Oyun ayarlarýnýzý deðiþtirmek isterseniz ~r~~h~~h~/Ayarlar ~w~~h~~h~komutunu kullanabilirsiniz."), SiraEx = 2;
+        case 1: format(str, sizeof(str), "~b~~h~~h~#Tuyo 1: ~w~~h~~h~Oyun ayarlarÄ±nÄ±zÄ± deÄŸiÅŸtirmek isterseniz ~r~~h~~h~/Ayarlar ~w~~h~~h~komutunu kullanabilirsiniz."), SiraEx = 2;
         case 2: format(str, sizeof(str), "~b~~h~~h~#Tuyo 2: ~w~~h~~h~Oyunda hileci gorduyseniz ~r~~h~~h~/Report ~w~~h~~h~komutunu kullanabilirsiniz."), SiraEx = 3;
         case 3: format(str, sizeof(str), "~b~~h~~h~#Tuyo 3: ~w~~h~~h~Oyunda gordugunuz buglari ~r~~h~~h~/Bugrapor ~w~~h~~h~komutunu kullanarak yetkililere bildirebilirsiniz."), SiraEx = 4;
-        case 4: format(str, sizeof(str), "~b~~h~~h~#Tuyo 4: ~w~~h~~h~Hesabinizda aldiginiz cezalarin sayisini ~r~~h~~h~/Cezalarim ~w~~h~~h~komutunu kullanarak öðrenebilirsin."), SiraEx = 0;
+        case 4: format(str, sizeof(str), "~b~~h~~h~#Tuyo 4: ~w~~h~~h~Hesabinizda aldiginiz cezalarin sayisini ~r~~h~~h~/Cezalarim ~w~~h~~h~komutunu kullanarak Ã¶ÄŸrenebilirsin."), SiraEx = 0;
 	}
 	TextDrawSetString(TuyoText, TurkceKarakter(str));
 	return 1;
@@ -3798,11 +3798,11 @@ function UpdateHostname()
 {
 	switch(random(5))
 	{
-	    case 0: SendRconCommand("hostname .·•¥•·. Owsla™ »» Race/Stunt/Gangwars/Freeroam ««"), SetGameModeText("Race/Stunt/Gangwars/Freeroam");
-	    case 1: SendRconCommand("hostname .·•¥•·. Owsla™ »» Freeroam/DM/Minigames/Gangs ««"), SetGameModeText("Freeroam/DM/Minigames/Gangs");
-	    case 2: SendRconCommand("hostname .·•¥•·. Owsla™ »» Stunt/DM/Race/Derby/Minigames ««"), SetGameModeText("Stunt/DM/Race/Derby/Minigames");
-	    case 3: SendRconCommand("hostname .·•¥•·. Owsla™ »» Derby/Stunt/Race/DM/Event ««"), SetGameModeText("Derby/Stunt/Race/DM/Event");
-	    case 4: SendRconCommand("hostname .·•¥•·. Owsla™ »» Duello/GangWar/Quiz/Loto ««"), SetGameModeText("Duello/GangWar/Quiz/Loto");
+	    case 0: SendRconCommand("hostname .Â·Â•Â¥Â•Â·. OwslaÂ™ Â»Â» Race/Stunt/Gangwars/Freeroam Â«Â«"), SetGameModeText("Race/Stunt/Gangwars/Freeroam");
+	    case 1: SendRconCommand("hostname .Â·Â•Â¥Â•Â·. OwslaÂ™ Â»Â» Freeroam/DM/Minigames/Gangs Â«Â«"), SetGameModeText("Freeroam/DM/Minigames/Gangs");
+	    case 2: SendRconCommand("hostname .Â·Â•Â¥Â•Â·. OwslaÂ™ Â»Â» Stunt/DM/Race/Derby/Minigames Â«Â«"), SetGameModeText("Stunt/DM/Race/Derby/Minigames");
+	    case 3: SendRconCommand("hostname .Â·Â•Â¥Â•Â·. OwslaÂ™ Â»Â» Derby/Stunt/Race/DM/Event Â«Â«"), SetGameModeText("Derby/Stunt/Race/DM/Event");
+	    case 4: SendRconCommand("hostname .Â·Â•Â¥Â•Â·. OwslaÂ™ Â»Â» Duello/GangWar/Quiz/Loto Â«Â«"), SetGameModeText("Duello/GangWar/Quiz/Loto");
 	}
 	return 1;
 }
@@ -3851,9 +3851,9 @@ stock HataliKomut(playerid, komut[])
  	}
  	switch(count)
  	{
-		case 0: format(str2, sizeof(str2), "Hata » {FFFFFF}Bilinmeyen komut.");
-		case 1: format(str2, sizeof(str2), "Hata » {FFFFFF}Bilinmeyen komut. Yakýn komut %s", str);
-		case 2, 3: format(str2, sizeof(str2), "Hata » {FFFFFF}Bilinmeyen komut. Yakýn komutlar %s", str);
+		case 0: format(str2, sizeof(str2), "Hata Â» {FFFFFF}Bilinmeyen komut.");
+		case 1: format(str2, sizeof(str2), "Hata Â» {FFFFFF}Bilinmeyen komut. YakÄ±n komut %s", str);
+		case 2, 3: format(str2, sizeof(str2), "Hata Â» {FFFFFF}Bilinmeyen komut. YakÄ±n komutlar %s", str);
  	}
 	return Hata(playerid, str2);
 }
@@ -3870,7 +3870,7 @@ stock SureYasagi(playerid, _0xyasakIsim[], _n0xsure)
 	{
 	    new verilenSure = (GetPVarInt(playerid, _v3r1) - GetTickCount()) / 1000;
 		_@0xsaniye = floatround(verilenSure);
-		format(str, sizeof(str), "Hata » {FFFFFF}Tekrar kullanmanýz için {FF0000}%d {FFFFFF}saniye var.", _@0xsaniye);
+		format(str, sizeof(str), "Hata Â» {FFFFFF}Tekrar kullanmanÄ±z iÃ§in {FF0000}%d {FFFFFF}saniye var.", _@0xsaniye);
 	    return Hata(playerid, str);
 	}else
 	{
@@ -3939,13 +3939,13 @@ stock VipSureKontrol(playerid)
 		{
 		    PlayerInfo[playerid][VIP] = 0;
 		    PlayerInfo[playerid][VIPSure] = 0;
-		    Bilgi(playerid, "Bilgi » {FFFFFF}Vip süreniz sona erdi, artýk vip deðilsiniz.");
+		    Bilgi(playerid, "Bilgi Â» {FFFFFF}Vip sÃ¼reniz sona erdi, artÄ±k vip deÄŸilsiniz.");
 
 			mysql_format(Owsla, str, sizeof(str),"UPDATE `oyuncular` SET `VIP` = '0', `VIPSure` = '0' WHERE `UserID` = '%d'", PlayerInfo[playerid][UserID]);
 			mysql_tquery(Owsla, str);
 		}else
 		{
-			format(str, sizeof(str), "Bilgi » {FFFFFF}Sunucuya %s {FFFFFF}olarak giriþ yaptýnýz. Vip bitiþ tarihi %s", GetVipLevel(playerid), ReturnDate(PlayerInfo[playerid][VIPSure]));
+			format(str, sizeof(str), "Bilgi Â» {FFFFFF}Sunucuya %s {FFFFFF}olarak giriÅŸ yaptÄ±nÄ±z. Vip bitiÅŸ tarihi %s", GetVipLevel(playerid), ReturnDate(PlayerInfo[playerid][VIPSure]));
 			Bilgi(playerid, str);
 		}
 	}
@@ -3957,7 +3957,7 @@ stock GetVipLevel(playerid)
 	switch(PlayerInfo[playerid][VIP])
 	{
 	    case 1: rutbe = "{FF00FF}Bronz Vip";
-	    case 2: rutbe = "{B8860B}Gümüþ Vip";
+	    case 2: rutbe = "{B8860B}GÃ¼mÃ¼ÅŸ Vip";
 	    case 3: rutbe = "{AFAFAF}Elmas Vip";
 	}
 	return rutbe;
@@ -4100,7 +4100,7 @@ stock TimestampToDate(Timestamp, &year, &month, &day, &hour, &minute, &second, H
 function CheckSBanList(playerid)
 {
  	new rows = cache_num_rows();
-	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan","{FFFFFF}SBanlý kimse bulunamadý.", "Tamam", "");
+	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan","{FFFFFF}SBanlÄ± kimse bulunamadÄ±.", "Tamam", "");
 	new isim[24], str[1024], time[32], ipadress[16], varname[32];
 	format(str, sizeof(str), "{FFFFFF}#\t{FFFFFF}Oyuncu Ismi\t{FFFFFF}Tarih\n");
 	for(new i; i < rows; i++)
@@ -4114,13 +4114,13 @@ function CheckSBanList(playerid)
 		SetPVarString(playerid, varname, ipadress);
 		format(str, sizeof(str), "%s{FFFFFF}%02d\t%s\t%s\n", str, i+1, isim, time);
 	}
-	ShowPlayerDialog(playerid, DIALOG_UNSBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "Baný Aç", "Geri");
+	ShowPlayerDialog(playerid, DIALOG_UNSBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "BanÄ± AÃ§", "Geri");
 	return 1;
 }
 function CheckNBanList(playerid)
 {
 	new rows = cache_num_rows();
-	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", "{FFFFFF}NBanlý kimse bulunamadý.", "Tamam", "");
+	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", "{FFFFFF}NBanlÄ± kimse bulunamadÄ±.", "Tamam", "");
 	new isim[24], str[1024], varname[32];
 	format(str, sizeof(str), "{FFFFFF}#\t{FFFFFF}Oyuncu Ismi\n");
 	for(new i; i < rows; i++)
@@ -4130,15 +4130,15 @@ function CheckNBanList(playerid)
 		SetPVarString(playerid, varname, isim);
 		format(str, sizeof(str), "%s{FFFFFF}%02d\t%s\n", str, i+1, isim);
 	}
-	ShowPlayerDialog(playerid, DIALOG_UNNBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "Baný Aç", "Geri");
+	ShowPlayerDialog(playerid, DIALOG_UNNBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "BanÄ± AÃ§", "Geri");
 	return 1;
 }
 function CheckIpBanList(playerid)
 {
 	new rows = cache_num_rows();
-	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan","{FFFFFF}Ip banlý kimse bulunamadý.", "Tamam", "");
+	if(!rows) return ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_MSGBOX, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan","{FFFFFF}Ip banlÄ± kimse bulunamadÄ±.", "Tamam", "");
 	new oyuncuname[25], ipadress[16], str[1024], tmes[32];
-	format(str, sizeof(str), "{FFFFFF}#\t{FFFFFF}Oyuncu Ýsmi\t{FFFFFF}IP Adresi\t{FFFFFF}Tarih\n");
+	format(str, sizeof(str), "{FFFFFF}#\t{FFFFFF}Oyuncu Ä°smi\t{FFFFFF}IP Adresi\t{FFFFFF}Tarih\n");
 	for(new i; i < rows;i++)
 	{
 		format(oyuncuname, sizeof(oyuncuname), "IpBlockOp_%d", i);
@@ -4148,7 +4148,7 @@ function CheckIpBanList(playerid)
 		cache_get_value_index(i, 2, tmes);
 		format(str, sizeof(str), "%s{FFFFFF}%02d\t%s\t%s\t%s\n", str, i+1, oyuncuname, ipadress, tmes);
 	}
-	ShowPlayerDialog(playerid, DIALOG_UNIPBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "Baný Aç", "Geri");
+	ShowPlayerDialog(playerid, DIALOG_UNIPBAN, DIALOG_STYLE_TABLIST_HEADERS, ""ANA_RENK"Owsla Gaming - {FFFFFF}UnBan", str, "BanÄ± AÃ§", "Geri");
 	return 1;
 }
 stock CheckNick(temp_name[])
@@ -4216,7 +4216,7 @@ function LoadRapors()
 			Iter_Add(Raporlar, id);
 		    loaded++;
 		}
-		printf("[INIT] %d bug rapor yüklendi.", loaded);
+		printf("[INIT] %d bug rapor yÃ¼klendi.", loaded);
   	}
 	return 1;
 }
@@ -4232,20 +4232,20 @@ function LoadUpdates()
 			Iter_Add(Updates, id);
 		    loaded++;
 		}
-		printf("[INIT] %d güncelleme yüklendi.", loaded);
+		printf("[INIT] %d gÃ¼ncelleme yÃ¼klendi.", loaded);
   	}
 	return 1;
 }
 stock EksikPara(playerid, deger)
 {
 	new str[256], dogalDeger = ((GetPlayerCash(playerid)-deger)-(GetPlayerCash(playerid)-deger)-(GetPlayerCash(playerid)-deger));
-	format(str, sizeof(str), "Hata » {FFFFFF}Toplam "ANA_RENK"%d {FFFFFF}paraniz yok. Eksik olan miktar "ANA_RENK"%d$", deger, dogalDeger);
+	format(str, sizeof(str), "Hata Â» {FFFFFF}Toplam "ANA_RENK"%d {FFFFFF}paraniz yok. Eksik olan miktar "ANA_RENK"%d$", deger, dogalDeger);
 	return Hata(playerid, str);
 }
 stock EksikSkor(playerid, deger)
 {
 	new str[256], dogalDeger = ((GetPlayerScore(playerid)-deger)-(GetPlayerScore(playerid)-deger)-(GetPlayerScore(playerid)-deger));
-	format(str, sizeof(str), "Hata » {FFFFFF}Toplam "ANA_RENK"%d {FFFFFF}skorunuz yok. Eksik olan miktar "ANA_RENK"%d {FFFFFF}skor", deger, dogalDeger);
+	format(str, sizeof(str), "Hata Â» {FFFFFF}Toplam "ANA_RENK"%d {FFFFFF}skorunuz yok. Eksik olan miktar "ANA_RENK"%d {FFFFFF}skor", deger, dogalDeger);
 	return Hata(playerid, str);
 }
 function OnObjectLoad(playerid)
@@ -4350,7 +4350,7 @@ stock GiveMedal(playerid, medalid)
 		{
 			MyMedals[playerid][medalid] = 1;
     		new msg[256], Query[168];
-			format(msg, sizeof(msg), "Bilgi » {FFFFFF}'"ANA_RENK"%s{FFFFFF}' baþarýmýný açtýn. Kalan baþarýmlara bakmak için /basarimlar yazmalýsýn. "ANA_RENK"(%d/%d)", MedalInfo[medalid][mIsim], GetPlayerMedalsCount(playerid), sizeof(MedalInfo));
+			format(msg, sizeof(msg), "Bilgi Â» {FFFFFF}'"ANA_RENK"%s{FFFFFF}' baÅŸarÄ±mÄ±nÄ± aÃ§tÄ±n. Kalan baÅŸarÄ±mlara bakmak iÃ§in /basarimlar yazmalÄ±sÄ±n. "ANA_RENK"(%d/%d)", MedalInfo[medalid][mIsim], GetPlayerMedalsCount(playerid), sizeof(MedalInfo));
     		Bilgi(playerid, msg);
 
 			mysql_format(Owsla, Query, sizeof(Query), "SELECT `Medal1` FROM `medals` WHERE `UserID` = '%d'", PlayerInfo[playerid][UserID]);
@@ -4399,18 +4399,18 @@ stock TurkceKarakter(txt[])
     {
         switch (converted_txt[i])
         {
-            case 'ð': converted_txt[i] = 'g';
-            case 'Ð': converted_txt[i] = 'G';
-            case 'þ': converted_txt[i] = 's';
-            case 'Þ': converted_txt[i] = 'S';
-            case 'ý': converted_txt[i] = 'i';
-            case 'ö': converted_txt[i] = 'o';
-            case 'Ö': converted_txt[i] = 'O';
-            case 'ç': converted_txt[i] = 'c';
-            case 'Ç': converted_txt[i] = 'C';
-            case 'ü': converted_txt[i] = 'u';
-            case 'Ü': converted_txt[i] = 'U';
-            case 'Ý': converted_txt[i] = 'I';
+            case 'ÄŸ': converted_txt[i] = 'g';
+            case 'Äž': converted_txt[i] = 'G';
+            case 'ÅŸ': converted_txt[i] = 's';
+            case 'Åž': converted_txt[i] = 'S';
+            case 'Ä±': converted_txt[i] = 'i';
+            case 'Ã¶': converted_txt[i] = 'o';
+            case 'Ã–': converted_txt[i] = 'O';
+            case 'Ã§': converted_txt[i] = 'c';
+            case 'Ã‡': converted_txt[i] = 'C';
+            case 'Ã¼': converted_txt[i] = 'u';
+            case 'Ãœ': converted_txt[i] = 'U';
+            case 'Ä°': converted_txt[i] = 'I';
         }
     }
     return converted_txt;
