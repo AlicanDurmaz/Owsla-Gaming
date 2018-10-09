@@ -130,7 +130,7 @@ enum dmVars
 	Float: dHP[2]
 };
 new DmInfo[MAX_DM][dmVars];
-    
+
 enum svVars
 {
 	MaxPing,
@@ -161,7 +161,7 @@ enum atData
 	Float:fScaleZ1
 }
 new AttachInfo[MAX_PLAYERS][MAX_ATTACHMENTS_PER_PLAYER][atData], inindex[MAX_PLAYERS], inmodel[MAX_PLAYERS];
-	
+
 new AttachmentObjectsList[] =
 {
 	18632, 18633, 18634, 18635, 18636,
@@ -812,13 +812,13 @@ public OnGameModeInit()
 	}
 	print("MySQL bağlantısı başarılı!");
     CreateMysqlTables();
-    
+
   	mysql_tquery(Owsla, "SELECT * FROM `spawnlar`", "LoadSpawns");
   	mysql_tquery(Owsla, "SELECT * FROM `server`", "LoadSettings");
   	mysql_tquery(Owsla, "SELECT * FROM `raporlar`", "LoadRapors");
   	mysql_tquery(Owsla, "SELECT * FROM `Updates`", "LoadUpdates");
 	mysql_tquery(Owsla, "SELECT * FROM `dmler`", "LoadDMs");
-	
+
   	SetTimer("GenelTimer", 1000, true);
     UsePlayerPedAnims();
 	EnableStuntBonusForAll(0);
@@ -913,7 +913,7 @@ public OnPlayerConnect(playerid)
 	if(cache_num_rows())
 	{
 	    new ban_Bitis, ban_Name[24], ban_Admin[24], ban_Sebep[56], ban_IP[16], ban_Durum;
-	    
+
 		cache_get_value_name(0, "kullanici", ban_Name, 24);
   		cache_get_value_int(0, "bitis", ban_Bitis);
   		cache_get_value_name(0, "sebep", ban_Sebep, 56);
@@ -941,18 +941,18 @@ public OnPlayerConnect(playerid)
 		mysql_tquery(Owsla, str, "OnPlayerDataLoaded", "dd", playerid, g_MysqlRaceCheck[playerid]);
 	}
 	cache_delete(VeriCek);
-    
+
 	StopAudioStreamForPlayer(playerid);
 	PlayAudioStreamForPlayer(playerid, "https://DL.dropbox.com/s/kyeskjd9t1fue5o/Owsla_Gaming_Intro_EXCISION.mp3");
     SetPlayerColor(playerid, PlayerColors[random(200)]);
     SendDeathMessage(INVALID_PLAYER_ID, playerid, 200);
-    
+
     for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
     SendClientMessage(playerid, 0x93FF93FF,"Owsla Gaming {FFFFFF}Serverine Hoşgeldiniz");
     SendClientMessage(playerid, 0xFFFFFFFF, "Serveri "ANA_RENK"favorilere {FFFFFF}eklemeyi unutmayın!");
     format(str, sizeof(str), "Sunucu rekoru "ANA_RENK"%d/%d {FFFFFF}oyuncu!", ServerInfo[Rekor], GetMaxPlayers());
     SendClientMessage(playerid, 0xFFFFFFFF, str);
-    
+
     LoadPlayerTextdraws(playerid);
 	if(Iter_Count(Player) > ServerInfo[Rekor])
 	{
@@ -989,7 +989,7 @@ public OnPlayerDisconnect(playerid, reason)
 		PlayerInfo[playerid][LoginTimer] = 0;
 	}
 	PlayerInfo[playerid][IsLoggedIn] = false;
-	
+
 	if(PlayerInfo[playerid][Araba] == true)
 	{
 		DestroyVehicle(PlayerInfo[playerid][Arabam]);
@@ -1067,7 +1067,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				PlayerInfo[playerid][Cache_ID] = MYSQL_INVALID_CACHE;
 	 	 		KillTimer(PlayerInfo[playerid][LoginTimer]), PlayerInfo[playerid][LoginTimer] = 0;
 				PlayerInfo[playerid][IsLoggedIn] = true;
-				
+
 				if(PlayerInfo[playerid][Banned] == 1) return BanReason(playerid, "N-Ban", "Sistem");
 				VipSureKontrol(playerid);
 				new query[128];
@@ -1568,10 +1568,10 @@ public OnPlayerLeaveDynamicArea(playerid, areaid)
 	{
 		if(areaid == SpawnInfo[i][spawnArea])
 		{
-            GangZoneStopFlashForAll(PlayerInfo[playerid][SpawnID]);
-		    PlayerInfo[playerid][SpawnID] = -1;
-		    Bilgi(playerid, "Bilgi » {FFFFFF}Spawn alanından çıktınız.");
-		    PlayerInfo[playerid][SpawnBolgesinde] = false;
+			Bilgi(playerid, "Bilgi » {FFFFFF}Spawn alanından çıktınız.");
+			PlayerInfo[playerid][SpawnBolgesinde] = false;
+			PlayerInfo[playerid][SpawnID] = -1;
+			GangZoneStopFlashForPlayer(playerid, PlayerInfo[playerid][SpawnID]);
 		}
 	}
 	return 1;
@@ -2249,7 +2249,7 @@ CMD:offban(playerid, params[])
 	if(sscanf(params, "s[24]is[56]", isim, gun, sebep)) return Kullanim(playerid, "Kullanim » {FFFFFF}/offban <Nick> <Gün> <Sebep>");
     if(CheckNick(isim) == 0) return Hata(playerid, "Hata » {FFFFFF}Böyle bir oyuncu yok.");
 	if(gun < 1) return Hata(playerid, "Hata » {FFFFFF}En az 1 gün girebilirsiniz!");
-	
+
 	new str[256];
     mysql_format(Owsla, str, sizeof(str),"SELECT * FROM `bans` WHERE `kullanici` = '%e'", isim);
     new Cache:VeriCek = mysql_query(Owsla, str);
@@ -2441,7 +2441,7 @@ CMD:basarimlar(playerid)
 	format(str, sizeof(str), ""ANA_RENK"#\t"ANA_RENK"Basari\t"ANA_RENK"Kosul\t"ANA_RENK"Durum\n");
 	for(new m; m < sizeof(MedalInfo); m++)
 	{
-		format(str, sizeof(str), "%s"ANA_RENK"%d\t{FFFFFF}%s\t%s\t%s\n", str, m+1, MedalInfo[m][mIsim], MedalInfo[m][mAciklama], (MyMedals[playerid][m] == 1) ? ("{66FF66}") : ("{FF6666}"));
+		format(str, sizeof(str), "%s"ANA_RENK"%d\t{FFFFFF}%s\t%s\t%s\n", str, m+1, MedalInfo[m][mIsim], MedalInfo[m][mAciklama], (MyMedals[playerid][m] == 1) ? ("{66FF66}???") : ("{FF6666}???"));
 	}
 	format(str2, sizeof(str2), ""ANA_RENK"Owsla Gaming - {FFFFFF}Başarımlar (%d/%d)", GetPlayerMedalsCount(playerid), sizeof(MedalInfo));
 	ShowPlayerDialog(playerid, DIALOG_UNUSED, DIALOG_STYLE_TABLIST_HEADERS, str2, str, "Tamam", "");
@@ -2646,7 +2646,7 @@ function OnPlayerDataLoaded(playerid, race_check)
 		cache_get_value(0, "Password", PlayerInfo[playerid][Password], 65);
 		cache_get_value(0, "Salt", PlayerInfo[playerid][Salt], 17);
 		PlayerInfo[playerid][Cache_ID] = cache_save();
-		
+
    		format(str, sizeof(str), ""ANA_RENK"Owsla Gaming'e {FFFFFF}Hoşgeldiniz!\n\
 									    {FFFFFF}Sunucu veritabanında "ANA_RENK"%s {FFFFFF}adında bir kullanıcı bulunuyor.\n\
 									    {FFFFFF}Giriş yapmak için "ANA_RENK"45 saniye {FFFFFF}içinde aşağıdaki kutucuğa şifrenizi giriniz.", PlayerInfo[playerid][Name]);
@@ -2798,7 +2798,7 @@ stock SBanReason(playerid, reason[], admin[], gun)
 	format(str, sizeof(str), "~r~~h~~h~[BAN] ~w~~h~~h~%s >>> %s (~y~~h~%s~w~~h~~h~) (~p~~h~%d gun~w~~h~~h~)", admin, PlayerInfo[playerid][Name], reason, gun);
 	TextMesaji(TurkceKarakter(str));
     for(new i = 0; i < 20; i++) SendClientMessage(playerid, 0xFFFFFFFF, "");
-    
+
 	mysql_format(Owsla, str, sizeof(str),"INSERT INTO `bans` (kullanici, sebep, admin, bitis, ip, durum) VALUES ('%e', '%e', '%e', '%i', '%s', '1')", PlayerInfo[playerid][Name], reason, admin, gettime()+(gun*86400), PlayerInfo[playerid][IP]);
 	mysql_tquery(Owsla, str);
 
@@ -2849,7 +2849,7 @@ stock RBanReason(playerid, reason[], admin[])
 
 	mysql_format(Owsla, str, sizeof(str), "INSERT INTO `blockip` (`ip`, `player`) VALUES ('%e', '%e')", PlayerRangeIP(playerid), PlayerInfo[playerid][Name]);
 	mysql_tquery(Owsla, str);
-	
+
     PlayerInfo[playerid][BanCount]++;
 	KickPlayer(playerid);
 	return 1;
@@ -3193,7 +3193,7 @@ stock LoadPlayerTextdraws(playerid)
 	PlayerTextDrawSetOutline(playerid, HizText[playerid], 1);
 	PlayerTextDrawSetProportional(playerid, HizText[playerid], 1);
 	PlayerTextDrawSetSelectable(playerid, HizText[playerid], 0);
-	
+
 	HizBox[playerid] = CreatePlayerTextDraw(playerid,622.000000, 410.000000, "_");
 	PlayerTextDrawAlignment(playerid,HizBox[playerid], 2);
 	PlayerTextDrawBackgroundColor(playerid,HizBox[playerid], 255);
@@ -3206,7 +3206,7 @@ stock LoadPlayerTextdraws(playerid)
 	PlayerTextDrawBoxColor(playerid,HizBox[playerid], 60);
 	PlayerTextDrawTextSize(playerid,HizBox[playerid], -2.000000, 33.000000);
 	PlayerTextDrawSetSelectable(playerid,HizBox[playerid], 0);
-	
+
 	Fps[playerid] = CreatePlayerTextDraw(playerid,625.000000, 5.000000, " ");
 	PlayerTextDrawAlignment(playerid, Fps[playerid], 3);
 	PlayerTextDrawBackgroundColor(playerid, Fps[playerid], 255);
@@ -3402,7 +3402,7 @@ stock LoadTextdraws()
 		TextDrawTextSize(OlayText[ex], 12.000000, 354.000000);
 		TextDrawSetSelectable(OlayText[ex], 0);
 	}
-	
+
 	KillBox = TextDrawCreate(611.000000, 101.000000, "_");
 	TextDrawBackgroundColor(KillBox, 255);
 	TextDrawFont(KillBox, 1);
@@ -3519,7 +3519,7 @@ stock LoadTextdraws()
 	TextDrawBoxColor(PingSprite, 255);
 	TextDrawTextSize(PingSprite, 10.000000, 10.000000);
 	TextDrawSetSelectable(PingSprite, 0);
-	
+
 	ExpBox = TextDrawCreate(641.000000, 97.000000, "_");
 	TextDrawBackgroundColor(ExpBox, 255);
 	TextDrawFont(ExpBox, 1);
@@ -3532,7 +3532,7 @@ stock LoadTextdraws()
 	TextDrawBoxColor(ExpBox, 68);
 	TextDrawTextSize(ExpBox, 609.000000, -31.000000);
 	TextDrawSetSelectable(ExpBox, 0);
-	
+
  	SaatBox = TextDrawCreate(577.000000, 57.000000, "_");
 	TextDrawAlignment(SaatBox, 2);
 	TextDrawBackgroundColor(SaatBox, 255);
@@ -3612,7 +3612,7 @@ function GenelTimer()
 	            GivePlayerCash(i, 1000);
 	            GivePlayerScore(i, 2);
 	        }
-	        
+
 	    }
 	}
 	foreach(new i: Player)
@@ -3798,11 +3798,11 @@ function UpdateHostname()
 {
 	switch(random(5))
 	{
-	    case 0: SendRconCommand("hostname .·¥·. Owsla »» Race/Stunt/Gangwars/Freeroam ««"), SetGameModeText("Race/Stunt/Gangwars/Freeroam");
-	    case 1: SendRconCommand("hostname .·¥·. Owsla »» Freeroam/DM/Minigames/Gangs ««"), SetGameModeText("Freeroam/DM/Minigames/Gangs");
-	    case 2: SendRconCommand("hostname .·¥·. Owsla »» Stunt/DM/Race/Derby/Minigames ««"), SetGameModeText("Stunt/DM/Race/Derby/Minigames");
-	    case 3: SendRconCommand("hostname .·¥·. Owsla »» Derby/Stunt/Race/DM/Event ««"), SetGameModeText("Derby/Stunt/Race/DM/Event");
-	    case 4: SendRconCommand("hostname .·¥·. Owsla »» Duello/GangWar/Quiz/Loto ««"), SetGameModeText("Duello/GangWar/Quiz/Loto");
+	    case 0: SendRconCommand("hostname .·?¥?·. Owsla? »» Race/Stunt/Gangwars/Freeroam ««"), SetGameModeText("Race/Stunt/Gangwars/Freeroam");
+	    case 1: SendRconCommand("hostname .·?¥?·. Owsla? »» Freeroam/DM/Minigames/Gangs ««"), SetGameModeText("Freeroam/DM/Minigames/Gangs");
+	    case 2: SendRconCommand("hostname .·?¥?·. Owsla? »» Stunt/DM/Race/Derby/Minigames ««"), SetGameModeText("Stunt/DM/Race/Derby/Minigames");
+	    case 3: SendRconCommand("hostname .·?¥?·. Owsla? »» Derby/Stunt/Race/DM/Event ««"), SetGameModeText("Derby/Stunt/Race/DM/Event");
+	    case 4: SendRconCommand("hostname .·?¥?·. Owsla? »» Duello/GangWar/Quiz/Loto ««"), SetGameModeText("Duello/GangWar/Quiz/Loto");
 	}
 	return 1;
 }
@@ -3811,13 +3811,13 @@ stock UpdateTablo(playerid)
 	new str[78];
 	format(str, sizeof(str),"Oldurme: ~w~~h~~h~%04d", PlayerInfo[playerid][Kills]);
 	PlayerTextDrawSetString(playerid, Kill[playerid], str);
-	
+
 	format(str, sizeof(str),"Olum: ~w~~h~~h~%04d", PlayerInfo[playerid][Deaths]);
 	PlayerTextDrawSetString(playerid, Death[playerid], str);
-	
+
 	format(str, sizeof(str),"Ratio: ~w~~h~~h~%.1f", floatdiv(PlayerInfo[playerid][Kills], PlayerInfo[playerid][Deaths]));
 	PlayerTextDrawSetString(playerid, Ratio[playerid], str);
-	
+
 	format(str, sizeof(str),"Skor: ~w~~h~~h~%04d", GetPlayerScore(playerid));
 	PlayerTextDrawSetString(playerid, Skorr[playerid], str);
 
@@ -3828,7 +3828,7 @@ stock UpdateTablo(playerid)
 	}
 	format(str, sizeof(str),"FPS: ~w~~h~~h~%03d", PlayerInfo[playerid][pFPS]);
 	PlayerTextDrawSetString(playerid, Fps[playerid], str);
-	
+
 	format(str, sizeof(str),"Ping: ~w~~h~~h~%03d",GetPlayerPing(playerid));
 	PlayerTextDrawSetString(playerid, Ping[playerid], str);
 	return 1;
